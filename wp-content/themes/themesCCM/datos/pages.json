@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Inicio",
+        "url": "index.html"
+    },
+    {
+        "title": "Noticias",
+        "url": "noticias.html"
+    },
+    {
+        "title": "Admisión",
+        "url": "admision-2025.html"
+    },
+    {
+        "title": "Talleres",
+        "url": "talleres.html"
+    },
+    {
+        "title": "Documentos",
+        "url": "documentos.html"
+    }
+]
