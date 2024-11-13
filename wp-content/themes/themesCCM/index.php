@@ -26,7 +26,7 @@
 
         <p><b>Proceso de Postulación Online:</b> Lunes 26 de agosto a Lunes 30 de octubre</p>
         <p><b>Publicación seleccionados y lista de espera: </b> martes 5 de noviembre</p>
-        <a href="<?php echo get_template_directory_uri(); ?>/pages/admision-2025.html"><button class="btn btn-danger">ADMISIÓN 2025</button></a>
+        <a href="<?php echo get_template_directory_uri(); ?>/admision-2025/l"><button class="btn btn-danger">ADMISIÓN 2025</button></a>
     </section>
 
     <!-- SECCIÓN NOTICIAS -->
@@ -111,7 +111,7 @@
         </div>
     </div>
 
-    <a href="<?php echo get_template_directory_uri(); ?>/pages/noticias.html"><button class="btn btn-danger mt-4">VER NOTICIAS</button></a>
+    <a href="<?php echo get_template_directory_uri(); ?>/noticias/"><button class="btn btn-danger mt-4">VER NOTICIAS</button></a>
 
     <!-- SECCIÓN COMUNICADOS -->
     <section id="comunicado" class="mt-4">

@@ -123,7 +123,7 @@ async function loadHeader() {
                         </button>
                     </div>
                     <div class="col-12 col-md-4 text-center order-3 order-md-2">
-                        <p id="titulo">CORAZÓN <a href="index.html"><img class="logo" src="${logoUrl}" alt="Logo Corazón de María"></a> DE MARÍA</p>
+                        <p id="titulo">CORAZÓN <a href="${miTema.homeUrl}"><img class="logo" src="${logoUrl}" alt="Logo Corazón de María"></a> DE MARÍA</p>
                     </div>
                     <div class="col-6 col-md-4 text-end order-2 order-md-3">
                         <div class="navbar-brand">
@@ -131,16 +131,16 @@ async function loadHeader() {
                             <input type="text" id="search-input" class="d-none" placeholder="Buscar..." aria-label="Buscar">
                             <div id="search-results" class="d-none"></div>
 
-                            <a href="./pages/noticias.html" class="d-none d-md-inline">Noticias</a>
-                            <a href="./pages/admision-2025.html" id="admision">Admisión</a>
+                            <a href="${miTema.rutaInicial}/noticias/" class="d-none d-md-inline">Noticias</a>
+                            <a href="${miTema.rutaInicial}/admision-2025/" id="admision">Admisión</a>
                         </div>
                     </div>
                 </div>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="${miTema.homeUrl}/">Inicio</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -149,15 +149,15 @@ async function loadHeader() {
                                 Colegio
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/colegio.html">Equipos</a></li>
-                                <li><a class="dropdown-item" href="./pages/historia.html">Historia</a></li>
-                                <li><a class="dropdown-item" href="./pages/mision-vision-valores.html">Misión, Visión y Valores</a></li>
-                                <li><a class="dropdown-item" href="./pages/misioneras-del-corazon-de-maria.html">Misioneras del Corazón de María</a></li>
-                                <li><a class="dropdown-item" href="./pages/infraestructura.html">Infraestructura</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/colegio/">Equipos</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/historia/">Historia</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/mision-vision-valores/">Misión, Visión y Valores</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/misioneras-del-corazon-de-maria/">Misioneras del Corazón de María</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/infraestructura/">Infraestructura</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/organizacion.html">Organización</a>
+                            <a class="nav-link" href="${miTema.rutaInicial}/organizacion/">Organización</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -172,7 +172,7 @@ async function loadHeader() {
                             </ul>
                         </li>                    
                         <li class="nav-item">
-                            <a class="nav-link" href="talleres.html">Talleres</a>
+                            <a class="nav-link" href="${miTema.rutaInicial}/talleres/">Talleres</a>
                         </li>
                     </ul>                
                 </div>
