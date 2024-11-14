@@ -6,8 +6,6 @@
     var logoUrlFooter = "<?php echo esc_url(get_template_directory_uri() . '/assets/img/logo_ccm.png'); ?>";
 </script>
 
-<!-- Elementos del footer -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/footer.js"></script>
 
 <!-- Script principal -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>

@@ -52,16 +52,16 @@ function loadFooter() {
                                 <h3>Enlaces</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Lista de Útiles Escolares</a></li>
-                                <li><a href="#">Uniformes Escolares</a></li>
-                                <li><a href="#">Transporte Escolar</a></li>
-                                <li><a href="#">Trabaja con Nosotros</a></li>
-                                <li><a href="#">Menu Casino del mes</a></li>
-                                <li><a href="#">Protocolos Covid 19</a></li>
-                                <li><a href="#">Tutoriales Lirmi</a></li>
-                                <li><a href="#">Boletin de Noticias</a></li>
-                                <li><a href="#">Procedimientos de emergencia</a></li>
-                                <li><a href="#">Calendario Actividades Anuales</a></li>
+                                <li><a href="${miTemaFooter.rutaInicial}/lista-de-utiles/">Lista de Útiles Escolares</a></li>
+                                <!--<li><a href="#">Uniformes Escolares</a></li>-->
+                                <!--<li><a href="#">Transporte Escolar</a></li>-->
+                                <!--<li><a href="#">Trabaja con Nosotros</a></li>-->
+                                <li><a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Noviembre_2024.pdf">Menu Casino del mes</a></li>
+                                <!--<li><a href="#">Protocolos Covid 19</a></li>-->
+                                <!--<li><a href="#">Tutoriales Lirmi</a></li>-->
+                                <!--<li><a href="#">Boletin de Noticias</a></li>-->
+                                <!--<li><a href="#">Procedimientos de emergencia</a></li>-->
+                                <!--<li><a href="#">Calendario Actividades Anuales</a></li>-->
 
                             </ul>
                         </div>
@@ -95,13 +95,8 @@ function loadFooter() {
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="../../../index.html">Inicio</a></li>
-                                <li><a href="#">Terminos y condiciones</a></li>
-                                <li><a href="#">Politicas de privacidad</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
+                        <div class="footer-menu text-white">
+                            <span>Colegio corazón de maría 2025</span>
                         </div>
                     </div>
                 </div>

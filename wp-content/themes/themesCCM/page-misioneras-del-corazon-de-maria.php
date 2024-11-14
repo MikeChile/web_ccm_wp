@@ -9,22 +9,17 @@ get_header(); ?>
 <div id="header-component"></div>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/header.js"></script>
 
-<!-- TITULO -->
+<!-- MISIONERAS DEL CORAZÓN DE MARÍA -->
 <div id="header" class="mb-4 pt-4">
     <div class="container">
         <div id="cajaTitulo">
-            <h1> NOTICIAS</h1>
+            <h1> MISIONERAS DEL CORAZÓN DE MARÍA</h1>
         </div>
     </div>
 </div>
 
 <!-- CONTENIDO PRINCIPAL-->
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h2>MISIONERAS CORAZÓN DE MARÍA</h2>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-12 col-md-6">

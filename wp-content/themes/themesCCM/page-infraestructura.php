@@ -9,11 +9,11 @@ get_header(); ?>
 <div id="header-component"></div>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/header.js"></script>
 
-<!-- TITULO -->
+<!-- INFRAESTRUCTURA -->
 <div id="header" class="mb-4 pt-4">
     <div class="container">
         <div id="cajaTitulo">
-            <h1> NOTICIAS</h1>
+            <h1> INFRAESTRUCTURA</h1>
         </div>
     </div>
 </div>

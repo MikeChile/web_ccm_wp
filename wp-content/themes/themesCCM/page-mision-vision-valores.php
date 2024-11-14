@@ -9,22 +9,18 @@ get_header(); ?>
 <div id="header-component"></div>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/header.js"></script>
 
-<!-- TITULO -->
+<!-- MISIÓN, VISIÓN, VALORES -->
 <div id="header" class="mb-4 pt-4">
     <div class="container">
         <div id="cajaTitulo">
-            <h1> NOTICIAS</h1>
+            <h1> MISIÓN, VISIÓN, VALORES</h1>
         </div>
     </div>
 </div>
 
 <!-- CONTENIDO PRINCIPAL-->
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h2>Historia del Colegio Corazón de María de San Miguel</h2>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2023/06/Banner-1-e1687881215789-768x384.png"

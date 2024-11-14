@@ -13,7 +13,7 @@ get_header(); ?>
 <div id="header" class="mb-4 pt-4">
     <div class="container">
         <div id="cajaTitulo">
-            <h1> NOTICIAS</h1>
+            <h1> ADMISIÓN AÑO ACADÉMICO 2025</h1>
         </div>
     </div>
 </div>
@@ -32,9 +32,7 @@ get_header(); ?>
                 <button class="btn btn-primary">Conoce nuestros espacios</button>
             </a>
         </div>
-        <div class="col-12 text-center">
-            <h2 class="my-4">ADMISIÓN AÑO ACADÉMICO 2025</h2>
-        </div>
+
     </div>
 
     <div class="row">

@@ -13,7 +13,7 @@ get_header(); ?>
 <div id="header" class="mb-4 pt-4">
     <div class="container">
         <div id="cajaTitulo">
-            <h1> TALLERES</h1>
+            <h1>DOCUMENTOS ACADÉMICOS</h1>
         </div>
     </div>
 </div>
@@ -22,19 +22,18 @@ get_header(); ?>
 <div class="container">
     <div class="row">
         <div class="col">
-            <video class="elementor-video"
-                src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2024/03/Profesores-talleres-2024.mp4"
-                controls="" preload="metadata" controlslist="nodownload"
-                poster="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2024/03/portada-talleres-2024.png"></video>
+            <h2>Académicos</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-4">
         <div class="col">
-            <a href="https://www.colegiocorazondemaria.cl/new/docs/listado_seleccionados_talleres_2024.pdf">
-                <h2>Listado de Seleccionados y Lista de Espera Talleres TAE 2024</h2>
+            <a target="_blank" href="https://www.colegiocorazondemaria.cl/new/docs/reglamento_de_evaluacion_2023_.pdf">
+                REGLAMENTO DE EVALUACIÓN, CALIFICACIÓN Y PROMOCIÓN (formato .pdf)
             </a>
         </div>
     </div>
+
+
 </div>
 
 <!-- FOOTER -->

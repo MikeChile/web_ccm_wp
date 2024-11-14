@@ -165,10 +165,10 @@ async function loadHeader() {
                                 Documentos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Académicos</a></li>
-                                <li><a class="dropdown-item" href="#">Institucionales</a></li>
-                                <li><a class="dropdown-item" href="#">Informativos</a></li>
-                                <li><a class="dropdown-item" href="#">Lecturas Complementarias</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/academicos/">Académicos</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/institucionales/">Institucionales</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/informativos/">Informativos</a></li>
+                                <li><a class="dropdown-item" href="${miTema.rutaInicial}/lecturas-complementarias/">Lecturas Complementarias</a></li>
                             </ul>
                         </li>                    
                         <li class="nav-item">

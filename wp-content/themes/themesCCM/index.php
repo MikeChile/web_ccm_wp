@@ -269,21 +269,21 @@
 
                                     <div class="col-12 col-md-4 mb-2">
                                         <div class="rectoria">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia5.png" alt=""
+                                            <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2023/06/madre-montse-scaled-e1709639708705-199x300.jpeg" alt=""
                                                 class="img-rectoria">
                                             <div class="titulo-rectoria">Madre Monserrat</div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-4 mb-2">
                                         <div class="rectoria rec-mid mb-4">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia5.png" alt=""
+                                            <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2024/03/yaqueline-reyes-200x300.jpg" alt=""
                                                 class="img-rectoria">
-                                            <div class="titulo-rectoria">Eliana Pedrero</div>
+                                            <div class="titulo-rectoria">Yaquelin Reyes Seguel</div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-4 mb-2">
                                         <div class="rectoria">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia5.png" alt=""
+                                            <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2024/08/DSCN0587-2-600x900-1-200x300.png" alt=""
                                                 class="img-rectoria">
                                             <div class="titulo-rectoria">Patricio Massardo</div>
                                         </div>
@@ -643,25 +643,30 @@
 
     <!-- SECCIÓN DE MAS INFORMACIONES -->
     <section id="mas_informaciones" class="mb-4">
+
         <h4>Colegio Corazón de María</h4>
         <h2>Más Informaciones</h2>
+
         <div class="row">
             <div class="col-12 col-md-4 mb-2">
                 <div class="row">
-                    <div class="col-12 mb-2">
+                    <!--<div class="col-12 mb-2">
                         <div class="caja-info"><i class='bx bxs-calendar'></i><a href="">Calendario de Actividades
                                 2024</a> </div>
-                    </div>
+                    </div>-->
                     <div class="col-12 mb-2">
-                        <div class="caja-info"><i class='bx bx-food-menu'></i><a href="">Menú casino mes de
-                                Septiembre</a> </div>
-                    </div>
-                    <div class="col-12 mb-2">
-                        <div class="caja-info"><i class='bx bxs-info-square'></i><a href="">Boletin Informativo</a>
+                        <div class="caja-info">
+                            <i class='bx bx-food-menu'></i>
+                            <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Noviembre_2024.pdf">Menú casino mes de
+                                Noviembre</a>
                         </div>
                     </div>
+                    <!--<div class="col-12 mb-2">
+                    <div class="caja-info"><i class='bx bxs-info-square'></i><a href="">Boletin Informativo</a>
+                    </div>-->
                 </div>
             </div>
+
             <div class="col-12 col-md-4 mb-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Protegete-de-las-altas-temperaturas-y-la-radiacion-solar.png"
                     alt="Protegete-de-las-altas-temperaturas-y-la-radiacion-solar" class="img-mas-info">
