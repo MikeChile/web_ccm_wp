@@ -1,5 +1,1 @@
 # Ignorar archivos de WordPress
-wp-admin/
-wp-includes/
-.htaccess
-wp-config.php
