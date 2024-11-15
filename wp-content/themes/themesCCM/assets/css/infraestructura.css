@@ -25,7 +25,14 @@
   --size-secundario: 18px;
   --size-grande: 50px;
 }
-
+@font-face {
+  font-family: "Imperial";
+  src: url("../fonts/urwimperialt.otf");
+}
+body {
+  color: var(--texto-principal);
+  font-family: "Imperial";
+}
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2022/03/page_bg.jpg);

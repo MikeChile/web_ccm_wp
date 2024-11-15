@@ -2,7 +2,7 @@
 
 async function loadPages() {
     try {
-        const response = await fetch('<?php echo get_template_directory_uri(); ?>/datos/pages.json'); // Cambia la ruta
+        const response = await fetch(`${miTema.rutaInicial}/datos/pages.json`); // Cambia la ruta
         const pages = await response.json();
         return pages;
     } catch (error) {
@@ -231,7 +231,25 @@ async function loadHeader() {
                 alert('Error al enviar el mensaje. Inténtalo de nuevo.');
             });
     });
+    if (!window.menuInitialized) {
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            // Tu código para manejar el menú
+
+        });
+
+        window.menuInitialized = true;
+    }
+    const myCollapse = new bootstrap.Collapse(document.getElementById('navbarSupportedContent'), {
+        toggle: false // Deshabilita el toggle automático
+    });
+
+    // Luego controlas manualmente el abrir/cerrar del menú
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
+        myCollapse.toggle(); // Alterna el estado
+    });
+
 }
+
 
 // Ejecuta la función al cargar el archivo
 loadHeader();

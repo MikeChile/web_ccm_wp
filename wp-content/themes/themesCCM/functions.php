@@ -34,7 +34,7 @@ function mi_tema_scripts()
 
     // Cargar el estilo específico para la página de Infraestructura
     if (
-        is_page('infraestructura') || is_page('academicos') || is_page('institucionales') || is_page('informativos') || is_page('lecturas-complementarias') || is_page('organizacion')
+        is_page('infraestructura') || is_page('academicos') || is_page('noticias') || is_page('institucionales') || is_page('informativos') || is_page('lecturas-complementarias') || is_page('organizacion')
         || is_page('colegio') || is_page('historia') || is_page('mision-vision-valores') || is_page('misioneras-del-corazon-de-maria') || is_page('infraestructura') || is_page('admision-2025') || is_page('lista-de-utiles')
     ) { // Asegúrate de que el slug de la página sea 'infraestructura'
         wp_enqueue_style('estilo-infraestructura', get_template_directory_uri() . '/assets/css/infraestructura.css');

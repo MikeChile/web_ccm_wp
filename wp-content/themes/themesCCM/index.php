@@ -5,7 +5,6 @@
 
 <!-- HEADER -->
 <div id="header-component"></div>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/header-home.js"></script>
 
 <!-- VIDEO PRESENTACIÓN-->
 <div id="video">
@@ -37,79 +36,97 @@
 
         <div class="slider-container">
             <div class="slider">
-                <div class="noticia">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia5.png" alt="" class="img-noticia">
-                    <div class="titulo-noticia">Destacado desempeño del taller de Handball femenino</div>
-                </div>
-                <div class="noticia">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia4.jpg" alt="" class="img-noticia">
-                    <div class="titulo-noticia">Simulacro regional de sismo</div>
-                </div>
-                <div class="noticia">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia3.jpg" alt="" class="img-noticia">
-                    <div class="titulo-noticia">La Importancia del Uso Seguro de las Redes Sociales</div>
-                </div>
-                <div class="noticia">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia2.png" alt="" class="img-noticia">
-                    <div class="titulo-noticia">Proceso de Elección de CGPA 2025</div>
-                </div>
-                <div class="noticia">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia1.jpg" alt="" class="img-noticia">
-                    <div class="titulo-noticia">Campeonato Escolar de Cueca de San Miguel –</div>
-                </div>
+
             </div>
         </div>
+
+        <script>
+            async function cargarNoticiasRecientes() {
+                try {
+                    const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
+                    const noticias = await respuesta.json();
+
+                    // Ordenar las noticias por fecha (descendente)
+                    const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
+
+                    // Tomar las 5 noticias más recientes
+                    const noticiasRecientes = noticiasOrdenadas.slice(0, 5);
+
+                    const slider = document.querySelector('.slider');
+
+                    // Crear las noticias para el slider
+                    noticiasRecientes.forEach(noticia => {
+                        const divNoticia = document.createElement('div');
+                        divNoticia.className = 'noticia';
+
+                        divNoticia.innerHTML = `
+                        <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
+                            <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
+                                alt="${noticia.titulo}" class="img-noticia">
+                            <div class="titulo-noticia">${noticia.titulo}</div>
+                        </a>
+                        `;
+
+                        slider.appendChild(divNoticia);
+                    });
+                } catch (error) {
+                    console.error("Error al cargar las noticias recientes:", error);
+                }
+            }
+
+            // Llamar a la función al cargar la página
+            document.addEventListener('DOMContentLoaded', cargarNoticiasRecientes);
+        </script>
     </section>
 
     <!--Noticias movil-->
     <div class="d-sm-none">
         <div class="scroll">
-            <div class="card">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia5.png" alt="" class="img-noticia">
-                        <div class="titulo-noticia">Destacado desempeño del taller de Handball femenino</div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia4.jpg" alt="" class="img-noticia">
-                        <div class="titulo-noticia">Simulacro regional de sismo</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia3.jpg" alt="" class="img-noticia">
-                        <div class="titulo-noticia">La Importancia del Uso Seguro de las Redes Sociales</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia2.png" alt="" class="img-noticia">
-                        <div class="titulo-noticia">Proceso de Elección de CGPA 2025</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noticias/noticia1.jpg" alt="" class="img-noticia">
-                        <div class="titulo-noticia">Campeonato Escolar de Cueca de San Miguel –</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+
+    <script>
+        async function cargarNoticiasMovil() {
+            try {
+                const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
+                const noticias = await respuesta.json();
+
+                // Ordenar las noticias por fecha (descendente)
+                const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
+
+                // Tomar las 5 noticias más recientes
+                const noticiasRecientes = noticiasOrdenadas.slice(0, 5);
+
+                const contenedorMovil = document.querySelector('.scroll');
+
+                // Crear las tarjetas de noticias para móvil
+                noticiasRecientes.forEach(noticia => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+
+                    card.innerHTML = `
+            <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
+                <div class="card-body">
+                    <div class="noticia">
+                        <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
+                            alt="${noticia.titulo}" class="img-noticia">
+                        <div class="titulo-noticia">${noticia.titulo}</div>
+                    </div>
+                </div>
+            </a>
+            `;
+
+                    contenedorMovil.appendChild(card);
+                });
+            } catch (error) {
+                console.error("Error al cargar las noticias para móvil:", error);
+            }
+        }
+
+        // Llamar a la función al cargar la página
+        document.addEventListener('DOMContentLoaded', cargarNoticiasMovil);
+    </script>
 
     <a href="<?php echo get_template_directory_uri(); ?>/noticias/"><button class="btn btn-danger mt-4">VER NOTICIAS</button></a>
 

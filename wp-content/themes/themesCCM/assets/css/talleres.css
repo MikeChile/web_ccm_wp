@@ -1,5 +1,31 @@
 @import url("./main.css");
+/* VARIABLES */
+:root {
+  /* Colores Primarios */
+  --color-primario: #3498db;
+  --color-secundario: #edf1f5;
+  --color-terciario: #003e51;
+  --color-cuartario: #5e82a1;
+  --color-gold: #dab878;
 
+  /* Colores Neutros */
+
+  /* Colores de Fondo */
+  --fondo: #263053;
+  /* Colores de Texto */
+  --texto-principal: #263053;
+  --texto-secundario: #969696;
+  --texto-principal-hover: #263053a9;
+  /* Colores para Estados */
+
+  /*bordes*/
+  --borde: 20px;
+
+  /* tamaños */
+  --size-primario: 24px;
+  --size-secundario: 18px;
+  --size-grande: 50px;
+}
 .elementor-video {
   width: 100%;
 }
@@ -29,4 +55,12 @@ h1 {
 }
 #cajaTitulo {
   border-left: 4px solid var(--color-gold);
+}
+@font-face {
+  font-family: "Imperial";
+  src: url("../fonts/urwimperialt.otf");
+}
+body {
+  color: var(--texto-principal);
+  font-family: "Imperial";
 }

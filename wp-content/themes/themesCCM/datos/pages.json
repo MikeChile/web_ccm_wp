@@ -1,22 +1,66 @@
 [
     {
         "title": "Inicio",
-        "url": "index.html"
+        "url": "/"
     },
     {
         "title": "Noticias",
-        "url": "noticias.html"
+        "url": "noticias/"
     },
     {
         "title": "Admisión",
-        "url": "admision-2025.html"
+        "url": "admision-2025/"
     },
     {
         "title": "Talleres",
-        "url": "talleres.html"
+        "url": "talleres/"
     },
     {
         "title": "Documentos",
-        "url": "documentos.html"
+        "url": "documentos/"
+    },
+    {
+        "title": "Documentos Academicos",
+        "url": "academicos/"
+    },
+    {
+        "title": "Colegio",
+        "url": "colegio/"
+    },
+    {
+        "title": "Historia",
+        "url": "historia/"
+    },
+    {
+        "title": "Documentos Informativos",
+        "url": "informativos/"
+    },
+    {
+        "title": "Infraestructura",
+        "url": "infraestructura/"
+    },
+    {
+        "title": "Documentos Institucionales",
+        "url": "institucionales/"
+    },
+    {
+        "title": "Lecturas Complementarias",
+        "url": "complementarias/"
+    },
+    {
+        "title": "Lista de Útiles",
+        "url": "lista-de-utiles/"
+    },
+    {
+        "title": "Misión, Visión y valores",
+        "url": "mision-vision-valores/"
+    },
+    {
+        "title": "Misioneras del corazón de María",
+        "url": "misioneras-del-corazon-de-maria/"
+    },
+    {
+        "title": "Organización",
+        "url": "organizacion/"
     }
 ]

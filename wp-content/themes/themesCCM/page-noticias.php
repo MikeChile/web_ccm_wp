@@ -19,61 +19,118 @@ get_header(); ?>
 </div>
 
 <!-- CONTENIDO PRINCIPAL-->
-<div class="container">
-    <div id="noticias" class="row"></div> <!-- Agregamos la clase "row" -->
-    <script>
-        // Función para cargar y mostrar las noticias
-        async function cargarNoticias() {
-            try {
-                const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
-                const noticias = await respuesta.json();
+<div class="container mt-4">
+    <div class="row">
+        <!-- Barra de años -->
+        <div class="col-2">
+            <ul class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+                <!-- Pestañas de años generadas dinámicamente -->
+            </ul>
+        </div>
 
-                const contenedorNoticias = document.querySelector('#noticias');
+        <!-- Noticias -->
+        <div class="col-10">
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Contenido de las noticias por año generado dinámicamente -->
+            </div>
+        </div>
+    </div>
+</div>
 
-                noticias.forEach(noticia => {
+<script>
+    async function cargarNoticias() {
+        try {
+            const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
+            const noticias = await respuesta.json();
+
+            // Agrupar noticias por año
+            const noticiasPorAno = noticias.reduce((acumulador, noticia) => {
+                const ano = new Date(noticia.fecha_publicacion).getFullYear();
+                if (!acumulador[ano]) {
+                    acumulador[ano] = [];
+                }
+                acumulador[ano].push(noticia);
+                return acumulador;
+            }, {});
+
+            // Ordenar las noticias de cada año por fecha de publicación (descendente)
+            for (const ano in noticiasPorAno) {
+                noticiasPorAno[ano].sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
+            }
+
+            // Obtener los años en orden descendente
+            const anosOrdenados = Object.keys(noticiasPorAno).sort((a, b) => b - a);
+
+            const navPills = document.querySelector('#pills-tab');
+            const tabContent = document.querySelector('#pills-tabContent');
+
+            // Crear pestañas y contenido
+            anosOrdenados.forEach((ano, index) => {
+                const isActive = index === 0 ? 'active' : '';
+
+                // Crear pestaña
+                const tabItem = document.createElement('li');
+                tabItem.className = 'nav-item';
+                tabItem.innerHTML = `
+                    <button class="nav-link ${isActive}" id="pills-${ano}-tab" data-bs-toggle="pill" data-bs-target="#pills-${ano}" type="button" role="tab" aria-controls="pills-${ano}" aria-selected="${index === 0}">
+                        ${ano}
+                    </button>
+                `;
+                navPills.appendChild(tabItem);
+
+                // Crear contenido
+                const noticiasDelAno = noticiasPorAno[ano];
+                const tabPane = document.createElement('div');
+                tabPane.className = `tab-pane fade ${isActive ? 'show active' : ''}`;
+                tabPane.id = `pills-${ano}`;
+                tabPane.role = 'tabpanel';
+                tabPane.ariaLabelledby = `pills-${ano}-tab`;
+
+                const row = document.createElement('div');
+                row.className = 'row';
+
+                noticiasDelAno.forEach(noticia => {
                     const columna = document.createElement('div');
-                    columna.className = 'col-12 col-md-4 mb-4';
+                    columna.className = 'col-12 col-md-6 col-lg-4 mb-4';
 
-                    // Truncar la descripción si excede los 100 caracteres
                     const descripcionCorta = noticia.descripcion.length > 100 ?
                         noticia.descripcion.substring(0, 100) + '...' :
                         noticia.descripcion;
 
                     columna.innerHTML = `
-                        <a href="noticia.html?id=${noticia.id}" class="text-decoration-none text-dark"> <!-- Enlace con el id -->
+                        <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
                             <div class="card h-100">
-                                <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" class="card-img-top img-noticia" alt="${noticia.titulo}">
+                                <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
+                                    class="card-img-top img-noticia" alt="${noticia.titulo}">
                                 <div class="card-body">
                                     <h5 class="card-title">${noticia.titulo}</h5>
-                                    <p class="card-text"><small class="text-muted">Publicado el: ${noticia.fecha_publicacion}</small></p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Publicado el: ${noticia.fecha_publicacion}</small>
+                                    </p>
                                     <p class="card-text">${descripcionCorta}</p>
                                 </div>
                             </div>
                         </a>
                     `;
 
-                    contenedorNoticias.appendChild(columna);
+                    row.appendChild(columna);
                 });
-            } catch (error) {
-                console.error("Error al cargar las noticias:", error);
-            }
-        }
 
-        // Llamar a la función para cargar noticias al cargar la página
-        document.addEventListener('DOMContentLoaded', cargarNoticias);
-    </script>
-</div>
+                tabPane.appendChild(row);
+                tabContent.appendChild(tabPane);
+            });
+        } catch (error) {
+            console.error("Error al cargar las noticias:", error);
+        }
+    }
+
+    // Llamar a la función para cargar noticias al cargar la página
+    document.addEventListener('DOMContentLoaded', cargarNoticias);
+</script>
+
 
 <!-- FOOTER -->
 <div id="footer-component"></div>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/footer.js"></script>
-
-<!-- SCRIPTS -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
-
-<!-- SCRIPT DE FUNCIONAMIENTO DE BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
 
 <?php get_footer(); ?>

@@ -1,3 +1,30 @@
+/* VARIABLES */
+:root {
+  /* Colores Primarios */
+  --color-primario: #3498db;
+  --color-secundario: #edf1f5;
+  --color-terciario: #003e51;
+  --color-cuartario: #5e82a1;
+  --color-gold: #dab878;
+
+  /* Colores Neutros */
+
+  /* Colores de Fondo */
+  --fondo: #263053;
+  /* Colores de Texto */
+  --texto-principal: #263053;
+  --texto-secundario: #969696;
+  --texto-principal-hover: #263053a9;
+  /* Colores para Estados */
+
+  /*bordes*/
+  --borde: 20px;
+
+  /* tamaños */
+  --size-primario: 24px;
+  --size-secundario: 18px;
+  --size-grande: 50px;
+}
 .img-noticia {
   width: 100%;
   height: 200px; /* Ajusta la altura según necesites */
@@ -11,4 +38,12 @@
 .card:hover {
   transform: scale(1.05); /* Aumenta ligeramente el tamaño */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor de la tarjeta */
+}
+@font-face {
+  font-family: "Imperial";
+  src: url("../fonts/urwimperialt.otf");
+}
+body {
+  color: var(--texto-principal);
+  font-family: "Imperial";
 }
