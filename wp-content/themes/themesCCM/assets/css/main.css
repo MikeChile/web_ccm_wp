@@ -642,10 +642,9 @@ a {
 .slider {
   display: flex;
   gap: 10px;
-  animation: slide 30s linear infinite; /* Desplazamiento continuo */
-  width: calc(
-    300px * 5 + 10px * 4
-  ); /* Ajustar el ancho total (5 noticias + 4 espacios de gap) */
+  animation: slide 60s linear infinite;
+  width: calc(300px * 5 + 10px * 4);
+  -webkit-animation: slide 60s linear infinite;
 }
 
 .noticia {

@@ -50,7 +50,7 @@
                     const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
 
                     // Tomar las 5 noticias más recientes
-                    const noticiasRecientes = noticiasOrdenadas.slice(0, 5);
+                    const noticiasRecientes = noticiasOrdenadas.slice(0, 7);
 
                     const slider = document.querySelector('.slider');
 
@@ -96,7 +96,7 @@
                 const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
 
                 // Tomar las 5 noticias más recientes
-                const noticiasRecientes = noticiasOrdenadas.slice(0, 5);
+                const noticiasRecientes = noticiasOrdenadas.slice(0, 7);
 
                 const contenedorMovil = document.querySelector('.scroll');
 
