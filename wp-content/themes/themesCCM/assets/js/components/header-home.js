@@ -181,7 +181,7 @@ async function loadHeader() {
 
         <!-- BARRA DE INFORMACIÓN-->
         <div id="barra-info" class="mb-3">
-            <p>Comienzo de clases 2025 <a href=""><b>info aquí</b></a></p>
+            <p class="text-center">Comienzo de clases 2025 <a href=""><b>info aquí</b></a></p>
         </div>
     `;
 

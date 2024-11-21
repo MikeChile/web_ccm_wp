@@ -87,16 +87,10 @@ function loadFooter() {
         </div>
         <div class="copyright-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p id="copyright-t">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="row justify-content-center">                    
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-center">
                         <div class="footer-menu text-white">
-                            <span>Colegio corazón de maría 2025</span>
+                            <span>Colegio Corazón de María 2025</span>
                         </div>
                     </div>
                 </div>

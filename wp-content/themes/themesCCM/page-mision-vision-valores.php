@@ -26,7 +26,7 @@ get_header(); ?>
                 alt="mision" class="img-fluid">
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
         <div class="col">
             <h3>MISIÓN : FORMAR JÓVENES DE BIEN </h3>
             <p>Educamos y Evangelizamos a los Niños y Jóvenes desde la propuesta educativa integral de la Escuela
@@ -41,7 +41,7 @@ get_header(); ?>
                 Católica, forma Jóvenes de bien que incidan positivamente en la sociedad.</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-4">
         <div class="col">
             <h3>VALORES </h3>
             <ul>

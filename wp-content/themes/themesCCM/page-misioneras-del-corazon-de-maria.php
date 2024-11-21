@@ -21,7 +21,7 @@ get_header(); ?>
 <div class="container">
 
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-9 mb-4">
             <p>El Padre Joaquín Masmitjá I de Puig, fundador de las Misioneras Corazón de María en 1848, fue un
                 líder de su época y de su tierra. Como sacerdote y estudioso en filosofía, teología y derecho,
                 poseía una gran sensibilidad social.</p>
@@ -37,18 +37,15 @@ get_header(); ?>
                 que consultaba todo con Jesucristo antes de tomar decisiones y hacer propuestas a los demás.
                 Valoraba la vida eucarística y consideraba la Misa como una oración sublime.</p>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-3 mb-4">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2023/06/Padre-Joaquin-Masmitja1.webp"
                 alt="Misioneras" class="img-fluid">
-            <p>
-                Padre JOAQUÍN MASMITJÁ I DE PUIG Fundador “Misioneras Corazón de María“ - 1848
-            </p>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-3 mb-4">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2022/09/foto3.jpg" alt="historia"
                 class="img-fluid">
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-9 mb-4">
             <p>Como apóstol, depositaba su confianza en la intercesión de María y esperaba el éxito de su acción
                 pastoral en ella. Su espiritualidad era trinitaria, centrada en Cristo y mariana. Creía en la
                 poderosa intercesión de María y confiaba en el Corazón maternal de ella.</p>
@@ -60,7 +57,7 @@ get_header(); ?>
                 la corrección fraterna. Mostraba valor y audacia en su apostolado y era fiel a la Iglesia y al Papa
                 León XIII.</p>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-8 mb-4">
             <p>En la contemplación del Corazón de María, Masmitjá perfiló y decidió su obra. Intuyó la importancia
                 de una buena educación humana y cristiana como agente de cambio en la sociedad. Reconoció la
                 necesidad de responder a la pobreza, el abandono y la ignorancia en que se encontraban las jóvenes
@@ -70,11 +67,11 @@ get_header(); ?>
                 académica, espiritual y moral, educando el corazón de los niños y niñas.</p>
 
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-4 mb-4">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2023/06/foto-2.bmp" alt="historia"
                 class="img-fluid">
         </div>
-        <div class="col-12">
+        <div class="col-12 mb-4">
             <p>La Congregación Misioneras Corazón de María es la primera del Estado Español dedicada exclusivamente
                 a la educación femenina. El 1 de julio de 1848, el Dr. Masmitjá constituyó oficialmente la
                 Congregación y su Obra Formativa, que ya había iniciado en diciembre de 1847. Fueron siete las

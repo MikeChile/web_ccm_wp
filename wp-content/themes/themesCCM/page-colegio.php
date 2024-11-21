@@ -59,7 +59,7 @@ min-width: 200px;" aria-orientation=" vertical">
                         </div>
 
                         <div class="row mt-4">
-                            <div class="col">
+                            <div class="col text-justify">
                                 <p>El Colegio Corazón de María se enorgullece de contar con diversos organismos y
                                     equipos de
                                     trabajo comprometidos en hacer realidad nuestra Misión y Visión institucional.

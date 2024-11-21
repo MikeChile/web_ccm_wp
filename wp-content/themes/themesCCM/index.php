@@ -131,15 +131,44 @@
     <a href="<?php echo get_template_directory_uri(); ?>/noticias/"><button class="btn btn-danger mt-4">VER NOTICIAS</button></a>
 
     <!-- SECCIÓN COMUNICADOS -->
-    <section id="comunicado" class="mt-4">
+    <section id="comunicado" class="mt-4 mb-5">
         <h4>Colegio Corazón de María</h4>
         <h2>Comunicados</h2>
-        <p class="m-2 mb-5">
-            Querida Comunidad CCM: Los siguientes son los horarios de entrada y salida del primer día de clases del
-            año escolar 2024 para los distintos niveles de nuestra institución: Primer día 2024 ¡Nos vemos en marzo!
-            Afectuosamente, Colegio Corazón de María. <a href="">Leer más...</a>
+        <p class="m-2" id="comunicado-actual-texto">
+            Cargando el comunicado más reciente...
         </p>
+        <a href="<?php echo get_template_directory_uri(); ?>/comunicados/">
+            <button class="btn btn-danger mt-4">VER COMUNICADOS</button>
+        </a>
     </section>
+
+    <script>
+        async function cargarComunicadoActual() {
+            try {
+                const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/comunicados.json');
+                const comunicados = await respuesta.json();
+
+                if (!Array.isArray(comunicados) || comunicados.length === 0) {
+                    console.error("El JSON está vacío o no es válido.");
+                    document.querySelector('#comunicado-actual-texto').textContent = "No hay comunicados disponibles en este momento.";
+                    return;
+                }
+
+                // Seleccionar el comunicado más reciente
+                const comunicadoMasReciente = comunicados.sort((a, b) => new Date(b.fecha) - new Date(a.fecha))[0];
+
+                // Actualizar el contenido del comunicado en la página
+                document.querySelector('#comunicado-actual-texto').textContent = comunicadoMasReciente.descripcion;
+            } catch (error) {
+                console.error("Error al cargar el comunicado más reciente:", error);
+                document.querySelector('#comunicado-actual-texto').textContent = "No se pudo cargar el comunicado más reciente.";
+            }
+        }
+
+        // Llamar a la función al cargar la página
+        document.addEventListener('DOMContentLoaded', cargarComunicadoActual);
+    </script>
+
 
     <!-- SECCIÓN DE MAS CONTENIDOS POR PESTAÑAS -->
     <section id="links">

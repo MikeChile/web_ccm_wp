@@ -71,7 +71,7 @@ body {
 .navbar-brand a {
   border-radius: var(--borde);
   background-color: var(--color-terciario);
-  padding: 7px;
+  padding: 10px;
   text-decoration: none;
   color: white;
   font-size: var(--size-secundario);
@@ -101,6 +101,7 @@ body {
 /* TITULO */
 #titulo {
   font-size: 24px;
+  text-align: center;
 }
 
 /* LOGO */
@@ -113,6 +114,19 @@ body {
 
 #admision:hover {
   background-color: var(--color-gold);
+}
+
+.navbar-toggler-icon {
+  margin-top: -6px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  color: var(--color-gold);
+}
+.navbar-toggler-icon:focus {
+  color: var(--color-gold);
 }
 /* VIDEO */
 #video {
@@ -152,13 +166,18 @@ body {
   z-index: -1; /* Envía el video detrás del contenido */
   object-fit: cover; /* Asegura que el video cubra todo el contenedor */
 }
-
+p {
+  text-align: justify;
+}
 h2 {
   text-align: center;
   color: rgb(0, 24, 68);
   font-size: var(--size-grande);
+  font-weight: 700;
 }
-
+.img-fluid {
+  width: 100%;
+}
 #about h4,
 #noticias h4,
 #comunicado h4,
@@ -174,6 +193,13 @@ section p {
   font-size: var(--size-primario);
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--color-primario);
+}
+.nav-link {
+  color: var(--color-primario);
+}
 .items-enlaces {
   border: 1px solid black;
   text-align: center;
@@ -923,4 +949,10 @@ button.contact_form_submit {
 }
 
 @media (min-width: 1400px) {
+}
+@media (min-width: 768px) {
+  .order-1,
+  .order-md-3 {
+    padding-top: 45px;
+  }
 }
