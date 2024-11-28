@@ -181,7 +181,7 @@ async function loadHeader() {
 
         <!-- BARRA DE INFORMACIÓN-->
         <div id="barra-info" class="mb-3">
-            <p class="text-center">Comienzo de clases 2025 <a href=""><b>info aquí</b></a></p>
+            <p class="text-center">Nuevo Taller: Experiencias Pedagogicas <a href="${miTema.rutaInicial}/taller/?id=44"><b>info aquí</b></a></p>
         </div>
     `;
 

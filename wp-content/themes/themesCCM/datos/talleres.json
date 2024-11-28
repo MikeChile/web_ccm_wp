@@ -1,0 +1,486 @@
+[
+    {
+        "ID": 1,
+        "nombre": "Artes",
+        "cursos_seleccionados": "5° básico a IV° medio",
+        "descripcion": "Taller de expresión artística para estudiantes avanzados.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 2,
+        "nombre": "Ajedrez (3° básico a 6° básico)",
+        "cursos_seleccionados": "3° básico a 6° básico",
+        "descripcion": "Introducción y práctica de estrategias de ajedrez.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 3,
+        "nombre": "Ajedrez (7° básico a IV° medio)",
+        "cursos_seleccionados": "7° básico a IV° medio",
+        "descripcion": "Competencias y estrategias avanzadas de ajedrez.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 4,
+        "nombre": "Ballet mixto",
+        "cursos_seleccionados": "1° básico a 2° básico",
+        "descripcion": "Introducción a la danza clásica.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 5,
+        "nombre": "Bandas musicales (5° básico a 7° básico)",
+        "cursos_seleccionados": "5° básico a 7° básico",
+        "descripcion": "Formación y práctica de bandas musicales.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 6,
+        "nombre": "Bandas musicales (8° básico a IV° medio)",
+        "cursos_seleccionados": "8° básico a IV° medio",
+        "descripcion": "Práctica musical para estudiantes avanzados.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 7,
+        "nombre": "Básquetbol (8° básico a IV° medio)",
+        "cursos_seleccionados": "8° básico a IV° medio",
+        "descripcion": "Competencias deportivas en básquetbol.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 8,
+        "nombre": "Basquetbol mixto (2° básico a 4° básico)",
+        "cursos_seleccionados": "2° básico a 4° básico",
+        "descripcion": "Introducción al básquetbol para niños.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 9,
+        "nombre": "Club de robótica",
+        "cursos_seleccionados": "5° básico a 8° básico",
+        "descripcion": "Exploración y construcción de robots.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 10,
+        "nombre": "Cocina",
+        "cursos_seleccionados": "6° básico a II° medio",
+        "descripcion": "Clases prácticas de cocina para jóvenes.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 11,
+        "nombre": "Coro",
+        "cursos_seleccionados": "3° básico a 6° básico",
+        "descripcion": "Práctica vocal y coral para niños.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 12,
+        "nombre": "Danza moderna mixto",
+        "cursos_seleccionados": "1° básico a 4° básico",
+        "descripcion": "Exploración de movimientos en danza moderna.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 13,
+        "nombre": "Danza urbana",
+        "cursos_seleccionados": "3° básico a IV° medio",
+        "descripcion": "Coreografías urbanas modernas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 14,
+        "nombre": "Desafíos matemáticos",
+        "cursos_seleccionados": "5° básico a 6° básico",
+        "descripcion": "Resolución de problemas matemáticos.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 15,
+        "nombre": "Fútbol femenino (5° básico a 7° básico)",
+        "cursos_seleccionados": "5° básico a 7° básico",
+        "descripcion": "Entrenamiento y competencias de fútbol para niñas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 16,
+        "nombre": "Fútbol femenino (8° básico a IV° medio)",
+        "cursos_seleccionados": "8° básico a IV° medio",
+        "descripcion": "Práctica avanzada de fútbol femenino.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 17,
+        "nombre": "Fútbol masculino (5° básico a 6° básico)",
+        "cursos_seleccionados": "5° básico a 6° básico",
+        "descripcion": "Entrenamiento y partidos de fútbol para niños.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 18,
+        "nombre": "Fútbol masculino (7° básico a 8° básico)",
+        "cursos_seleccionados": "7° básico a 8° básico",
+        "descripcion": "Competencias y entrenamiento avanzado de fútbol masculino.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 19,
+        "nombre": "Fútbol masculino (I° medio a IV° medio)",
+        "cursos_seleccionados": "I° medio a IV° medio",
+        "descripcion": "Práctica avanzada y competiciones de fútbol masculino.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 20,
+        "nombre": "Fútbol mixto (1° básico a 2° básico)",
+        "cursos_seleccionados": "1° básico a 2° básico",
+        "descripcion": "Introducción al fútbol para niños y niñas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 21,
+        "nombre": "Fútbol mixto (3° básico a 4° básico)",
+        "cursos_seleccionados": "3° básico a 4° básico",
+        "descripcion": "Entrenamiento mixto de fútbol para niños y niñas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 22,
+        "nombre": "Fútbol mixto (5° básico a 7° básico)",
+        "cursos_seleccionados": "5° básico a 7° básico",
+        "descripcion": "Competencias mixtas de fútbol para niveles intermedios.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 23,
+        "nombre": "Gimnasia rítmica",
+        "cursos_seleccionados": "3° básico a 4° básico",
+        "descripcion": "Aprendizaje y práctica de gimnasia rítmica, desde nivel básico hasta avanzado.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 24,
+        "nombre": "Guitarra inicial",
+        "cursos_seleccionados": "5° básico a IV° medio",
+        "descripcion": "Aprendizaje y práctica de guitarra inicial, desde nivel básico hasta medio.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 25,
+        "nombre": "Handball femenino premini 3°- 4°básico ",
+        "cursos_seleccionados": "3° básico a 4° básico",
+        "descripcion": "Taller de Handball femenino premini 3°- 4° básico .",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 26,
+        "nombre": "Handball femenino premini 5°- 6°básico ",
+        "cursos_seleccionados": "5° básico a 6° básico",
+        "descripcion": "Taller de Handball femenino premini 5°- 6° básico .",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 27,
+        "nombre": "Handball femenino infantil",
+        "cursos_seleccionados": "7° básico a 8° básico",
+        "descripcion": "Taller de Handball femenino infantil.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 28,
+        "nombre": "Yoga kids (1° básico)",
+        "cursos_seleccionados": "1° básico",
+        "descripcion": "Taller de yoga diseñado especialmente para estudiantes de primer básico.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 29,
+        "nombre": "Yoga kids (2° básico)",
+        "cursos_seleccionados": "2° básico",
+        "descripcion": "Taller de yoga enfocado en la relajación y el equilibrio para estudiantes de segundo básico.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 30,
+        "nombre": "Intervención y personalización de prendas",
+        "cursos_seleccionados": "7° básico a IV° medio",
+        "descripcion": "Taller creativo para transformar y personalizar prendas de vestir.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 31,
+        "nombre": "Modelado e impresión 3D",
+        "cursos_seleccionados": "7° básico a IV° medio",
+        "descripcion": "Introducción al diseño y creación de modelos 3D con impresoras avanzadas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 32,
+        "nombre": "Natación (5°-8° básico)",
+        "cursos_seleccionados": "5° básico a 8° básico",
+        "descripcion": "Taller de natación para mejorar técnicas y competencias acuáticas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 33,
+        "nombre": "Polideportivo (1°- 2° básico)",
+        "cursos_seleccionados": "1° básico a 2° básico",
+        "descripcion": "Actividades deportivas variadas para estudiantes más pequeños.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 34,
+        "nombre": "Polideportivo (3°-4° básico)",
+        "cursos_seleccionados": "3° básico a 4° básico",
+        "descripcion": "Taller de múltiples deportes para fomentar la actividad física y el trabajo en equipo.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 35,
+        "nombre": "Teatro básica (4°-6° básico)",
+        "cursos_seleccionados": "4° básico a 6° básico",
+        "descripcion": "Taller de expresión teatral para estudiantes de educación básica.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 36,
+        "nombre": "Teatro media",
+        "cursos_seleccionados": "7° básico a IV° medio",
+        "descripcion": "Taller de actuación y desarrollo escénico para estudiantes de educación media.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 37,
+        "nombre": "Acondicionamiento físico mixto (7°-II° medio)",
+        "cursos_seleccionados": "7° básico a II° medio",
+        "descripcion": "Entrenamiento físico integral para mejorar la resistencia y el bienestar general.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "acondicionamiento1.webp",
+            "acondicionamiento2.webp"
+        ]
+    },
+    {
+        "ID": 38,
+        "nombre": "English through the music",
+        "cursos_seleccionados": "5° básico a 6° básico",
+        "descripcion": "Aprender inglés a través de canciones y actividades musicales divertidas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 39,
+        "nombre": "Periodismo",
+        "cursos_seleccionados": "8° básico a II° medio",
+        "descripcion": "Explora el mundo del periodismo y aprende a crear contenido informativo.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 40,
+        "nombre": "Voleibol (6°-8° básico)",
+        "cursos_seleccionados": "6° básico a 8° básico",
+        "descripcion": "Taller de voleibol para estudiantes que buscan mejorar sus habilidades y participar en competencias.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 41,
+        "nombre": "Voleibol (I°-IV° medio)",
+        "cursos_seleccionados": "I° medio a IV° medio",
+        "descripcion": "Taller avanzado de voleibol para estudiantes de enseñanza media.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 42,
+        "nombre": "Patinaje miércoles (15:15-16:30)",
+        "cursos_seleccionados": "3° básico a 4° básico",
+        "descripcion": "Taller de patinaje recreativo enfocado en técnica y diversión.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 43,
+        "nombre": "Patinaje viernes (14:00-15:15)",
+        "cursos_seleccionados": "5° básico a 7° básico",
+        "descripcion": "Taller de patinaje enfocado en equilibrio y habilidades avanzadas.",
+        "portada": "talleres.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    },
+    {
+        "ID": 44,
+        "nombre": "Experiencias pedagógicas",
+        "cursos_seleccionados": "I° medio a IV° medio",
+        "descripcion": "Taller destinado a fomentar el aprendizaje práctico a través de proyectos pedagógicos innovadores.",
+        "portada": "talleres/Portada_experiencias_pedagogicas.png",
+        "imagenes_del_taller": [
+            "taller.webp",
+            "taller.webp"
+        ]
+    }
+]
