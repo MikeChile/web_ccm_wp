@@ -29,7 +29,7 @@ function mi_tema_scripts()
 
     // Cargar el estilo específico para la página de Admisión 2025
     if (is_page('admision-2025')) { // Asegúrate de que el slug de la página sea 'admision-2025'
-        wp_enqueue_style('estilo-admision', get_template_directory_uri() . '/assets/css/admission.css');
+        wp_enqueue_style('estilo-admision', get_template_directory_uri() . '/assets/css/admision.css');
     }
 
     // Cargar el estilo específico para la página de Infraestructura

@@ -20,7 +20,7 @@ get_header(); ?>
 <!-- CONTENIDO PRINCIPAL-->
 <div class="container">
 
-    <div class="row text-center">
+    <div class="row text-center my-4">
         <div class="col-6">
             <a href="https://www.colegiocorazondemaria.cl/new/admision-2024/">
                 <button class="btn btn-danger"> Admisión 2024</button>
@@ -36,6 +36,7 @@ get_header(); ?>
 
     <div class="row">
         <div class="col-12 text-center">
+            <h2 class="mt-4">ADMISIÓN AÑO ACADÉMICO 2025</h2>
             <h3 class="mt-4">PROCESO DE POSTULACIÓN ONLINE</h3>
         </div>
         <div class="col-12">
@@ -97,7 +98,7 @@ get_header(); ?>
                 <tbody>
                     <tr>
                         <td>Medio Mayor</td>
-                        <td>30</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>Pre Kínder</td>
@@ -193,17 +194,17 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>2° Medio</td>
-                        <td>0</td>
+                        <td>2</td>
 
                     </tr>
                     <tr>
                         <td>3° Medio</td>
-                        <td>1</td>
+                        <td>6</td>
 
                     </tr>
                     <tr>
                         <td>4° Medio</td>
-                        <td>3</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>--</td>
