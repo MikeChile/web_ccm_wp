@@ -1,54 +1,44 @@
 <?php
 function mi_tema_scripts()
 {
+    // Estilos principales
     wp_enqueue_style('estilos', get_stylesheet_uri());
 
-    // Encolar el archivo JavaScript para el header
+    // Script para el header
     wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/components/header-home.js', array('jquery'), null, true);
-
-    // Define la URL base del tema y pásala al JavaScript
     wp_localize_script('header-js', 'miTema', array(
         'rutaInicial' => get_template_directory_uri(),
-        'homeUrl' => home_url() // Agrega la URL de la página de inicio
+        'homeUrl' => home_url(),
     ));
 
-    // Encolar el archivo JavaScript para el footer
+    // Script para el footer
     wp_enqueue_script('footer-js', get_template_directory_uri() . '/assets/js/components/footer.js', array('jquery'), null, true);
-
-    // Define la URL base del tema y pásala al JavaScript
     wp_localize_script('footer-js', 'miTemaFooter', array(
         'rutaInicial' => get_template_directory_uri(),
-        'homeUrl' => home_url()
+        'homeUrl' => home_url(),
     ));
 
-
-    // Cargar el estilo específico para la página de Talleres
-    if (is_page('talleres')) { // Asegúrate de que el slug de la página sea 'talleres'
+    // Estilos específicos para páginas
+    if (is_page('talleres')) {
         wp_enqueue_style('estilo-talleres', get_template_directory_uri() . '/assets/css/talleres.css');
     }
 
-    // Cargar el estilo específico para la página de Admisión 2025
-    if (is_page('admision-2025')) { // Asegúrate de que el slug de la página sea 'admision-2025'
+    if (is_page('admision-2025')) {
         wp_enqueue_style('estilo-admision', get_template_directory_uri() . '/assets/css/admision.css');
     }
 
-    // Cargar el estilo específico para la página de Infraestructura
     if (
-        is_page('infraestructura') || is_page('academicos') || is_page('noticias') || is_page('institucionales') || is_page('informativos') || is_page('lecturas-complementarias') || is_page('organizacion')
-        || is_page('colegio') || is_page('comunicados') || is_page('historia') || is_page('mision-vision-valores') || is_page('misioneras-del-corazon-de-maria') || is_page('infraestructura') || is_page('admision-2025') || is_page('lista-de-utiles')
-    ) { // Asegúrate de que el slug de la página sea 'infraestructura'
+        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
+    ) {
         wp_enqueue_style('estilo-infraestructura', get_template_directory_uri() . '/assets/css/infraestructura.css');
     }
 
-    // Cargar el estilo específico para la página de Noticias
-    if (is_page('noticias')) { // Asegúrate de que el slug de la página sea 'noticias'
+    if (is_page('noticias')) {
         wp_enqueue_style('estilo-noticias', get_template_directory_uri() . '/assets/css/noticias.css');
     }
 
-    // Incluir EmailJS
+    // EmailJS para servicios de correo
     wp_enqueue_script('emailjs', 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js', array(), null, true);
-
-    // Incluir script personalizado para logo y configuración de EmailJS
     wp_add_inline_script('emailjs', '
         var logoUrl = "' . esc_url(get_template_directory_uri() . '/assets/img/logo_ccm.png') . '";
         (function() {
@@ -56,4 +46,60 @@ function mi_tema_scripts()
         })();
     ');
 }
+
 add_action('wp_enqueue_scripts', 'mi_tema_scripts');
+
+// Registrar endpoint para suscripciones
+add_action('rest_api_init', function () {
+    register_rest_route('ccm/v1', '/subscribe', [
+        'methods' => 'POST',
+        'callback' => 'ccm_handle_subscription',
+        'permission_callback' => '__return_true', // Permitir acceso público
+    ]);
+});
+
+// Registrar endpoint para suscripciones
+add_action('rest_api_init', function () {
+    register_rest_route('ccm/v1', '/subscribe', [
+        'methods' => 'POST',
+        'callback' => 'ccm_handle_subscription',
+        'permission_callback' => '__return_true', // Permitir acceso público
+    ]);
+});
+
+
+// Función para manejar la suscripción
+function ccm_handle_subscription(WP_REST_Request $request)
+{
+    // Obtener el correo desde la solicitud
+    $email = sanitize_email($request->get_param('email'));
+
+    // Validar que el correo sea válido
+    if (!is_email($email)) {
+        return new WP_REST_Response('Correo no válido', 400); // Responder con error 400 si no es válido
+    }
+
+    // Ruta al archivo correos.json
+    $file_path = get_template_directory() . '/datos/correos.json';
+
+    // Leer los correos existentes
+    $emails = [];
+    if (file_exists($file_path)) {
+        $content = file_get_contents($file_path);
+        $emails = json_decode($content, true) ?? []; // Decodificar JSON o inicializar vacío
+    }
+
+    // Agregar el nuevo correo
+    if (!in_array($email, $emails)) {
+        $emails[] = $email;
+
+        // Guardar el archivo correos.json
+        if (file_put_contents($file_path, json_encode($emails, JSON_PRETTY_PRINT))) {
+            return new WP_REST_Response(['message' => '¡Te has registrado correctamente!'], 200); // Responder con éxito
+        } else {
+            return new WP_REST_Response('Error al guardar el correo', 500); // Responder con error si no se guarda
+        }
+    }
+
+    return new WP_REST_Response('Este correo ya está registrado', 200); // Responder si el correo ya está en la lista
+}

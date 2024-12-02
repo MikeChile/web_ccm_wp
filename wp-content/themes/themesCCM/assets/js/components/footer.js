@@ -75,11 +75,12 @@ function loadFooter() {
                                 <p>Recibe las noticias de nuestro colegio.</p>
                             </div>
                             <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Correo">
-                                    <button><i class='bx bxs-envelope'></i></button>
+                                <form id="subscribeForm">
+                                    <input type="email" placeholder="Correo" required>
+                                    <button type="submit"><i class='bx bxs-envelope'></i></button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -98,8 +99,56 @@ function loadFooter() {
         </div>
     </footer>
     `;
-    document.getElementById('footer-component').innerHTML = footerHTML;
+    //document.getElementById('footer-component').innerHTML = footerHTML;
+
+    const footerElement = document.getElementById('footer-component');
+    if (footerElement) {
+        footerElement.innerHTML = footerHTML;
+    }
 }
 
+
+// Manejo del formulario de suscripción
+document.addEventListener('DOMContentLoaded', function () {
+    loadFooter(); // Llama a la función para cargar el footer
+
+    const subscribeForm = document.getElementById('subscribeForm');
+    if (subscribeForm) {
+        subscribeForm.addEventListener('submit', async function (e) {
+            e.preventDefault(); // Previene el comportamiento por defecto del formulario
+
+            const emailInput = this.querySelector('input[type="email"]');
+            const email = emailInput.value.trim();
+
+            if (!email) {
+                alert('Por favor, ingresa un correo válido.');
+                return;
+            }
+
+            try {
+                const response = await fetch('http://localhost/web_ccm_wordpress/wp-json/ccm/v1/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email }), // Enviar el correo como JSON
+                });
+
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert(result.message || '¡Te has suscrito correctamente! Recibirás las últimas noticias del colegio directamente en tu correo electrónico.');
+
+                    emailInput.value = ''; // Limpiar el campo de entrada
+                } else {
+                    alert(result.message || 'Hubo un error al registrarte. Intenta nuevamente.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('No se pudo procesar tu registro. Por favor, intenta más tarde.');
+            }
+        });
+    }
+});
+
 // Llama a la función al cargar el archivo
-loadFooter();
+//loadFooter();
