@@ -1,0 +1,13 @@
+hr {
+  background-color: blue;
+}
+
+h4,
+cite {
+  color: #dab878;
+  font-size: 20px;
+}
+
+.elementor-blockquote {
+  border-left: 4px solid #dab878;
+}

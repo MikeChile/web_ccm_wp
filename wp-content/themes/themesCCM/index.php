@@ -21,11 +21,23 @@
     <!-- INFORMACIÓN IMPORTANTE-->
     <section id="about" class="my-4">
         <h4>Colegio Corazón de María</h4>
-        <h2>Admisión 2025</h2>
+        <h3>Admisión 2025</h3>
+        <h5>Tercer Proceso de Postulación Prekinder a 2do Básico</h5>
+        <ul class="mb-4">
+            <li><b>Postulación Online:</b> Hasta el 20 de diciembre de 2024</li>
+            <li><b>Publicación seleccionados para matricula y/o lista de espera: </b> 23 de diciembre de 2024</li>
+            <li><b>Matricula:</b> 7 de enero de 2025</li>
+        </ul>
 
-        <p><b>Proceso de Postulación Online:</b> Lunes 26 de agosto a Lunes 30 de octubre</p>
-        <p><b>Publicación seleccionados y lista de espera: </b> martes 5 de noviembre</p>
-        <a href="<?php echo get_template_directory_uri(); ?>/admision-2025/l"><button class="btn btn-danger">ADMISIÓN 2025</button></a>
+        <h5>Tercer Proceso de Postulación</h5>
+        <ul class="mb-4">
+            <li><b>Postulación Online:</b> Hasta el 20 de diciembre de 2024</li>
+            <li><b>Examenes de admisión:</b> 17 de diciembre a las 8:15 hrs. (duración 2 hrs. aprox.)</li>
+            <li><b>Publicación seleccionados para matricula y/o lista de espera: </b> 23 de diciembre de 2024</li>
+            <li><b>Matricula:</b> 7 de enero de 2025</li>
+        </ul>
+
+        <a href="<?php echo get_template_directory_uri(); ?>/admision-2025/"><button class="btn btn-danger">ADMISIÓN 2025</button></a>
     </section>
 
     <!-- SECCIÓN NOTICIAS -->
@@ -106,16 +118,16 @@
                     card.className = 'card';
 
                     card.innerHTML = `
-            <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
-                <div class="card-body">
-                    <div class="noticia">
-                        <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
-                            alt="${noticia.titulo}" class="img-noticia">
-                        <div class="titulo-noticia">${noticia.titulo}</div>
-                    </div>
-                </div>
-            </a>
-            `;
+                    <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
+                        <div class="card-body">
+                            <div class="noticia">
+                                <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
+                                    alt="${noticia.titulo}" class="img-noticia">
+                                <div class="titulo-noticia">${noticia.titulo}</div>
+                            </div>
+                        </div>
+                    </a>
+                    `;
 
                     contenedorMovil.appendChild(card);
                 });
@@ -696,15 +708,19 @@
         <div class="row">
             <div class="col-12 col-md-4 mb-2">
                 <div class="row">
-                    <!--<div class="col-12 mb-2">
-                        <div class="caja-info"><i class='bx bxs-calendar'></i><a href="">Calendario de Actividades
-                                2024</a> </div>
-                    </div>-->
+                    <div class="col-12 mb-2">
+                        <div class="caja-info">
+                            <i class='bx bxs-calendar'></i>
+                            <a href="<?php echo get_template_directory_uri(); ?>/calendario-de-actividades/">
+                                Calendario de Actividades
+                            </a>
+                        </div>
+                    </div>
                     <div class="col-12 mb-2">
                         <div class="caja-info">
                             <i class='bx bx-food-menu'></i>
-                            <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Noviembre_2024.pdf">Menú casino mes de
-                                Noviembre</a>
+                            <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Diciembre_2024.pdf">Menú casino mes de
+                                Diciembre</a>
                         </div>
                     </div>
                     <!--<div class="col-12 mb-2">

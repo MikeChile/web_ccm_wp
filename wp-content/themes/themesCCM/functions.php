@@ -28,13 +28,17 @@ function mi_tema_scripts()
     }
 
     if (
-        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
+        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'calendario-de-actividades', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
     ) {
         wp_enqueue_style('estilo-infraestructura', get_template_directory_uri() . '/assets/css/infraestructura.css');
     }
 
     if (is_page('noticias')) {
         wp_enqueue_style('estilo-noticias', get_template_directory_uri() . '/assets/css/noticias.css');
+    }
+
+    if (is_page('calendario-de-actividades')) {
+        wp_enqueue_style('estilo-noticias', get_template_directory_uri() . '/assets/css/calendario-actividades.css');
     }
 
     // EmailJS para servicios de correo
