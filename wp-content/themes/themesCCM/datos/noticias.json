@@ -69,6 +69,17 @@
         "anio": 2024,
         "descripcion": "Una serie de talleres y actividades se llevaron a cabo para fomentar la prevención del acoso y la promoción de un ambiente seguro dentro del colegio. Estas iniciativas involucraron tanto a estudiantes como a profesores y apoderados, trabajando juntos para construir una comunidad más empática y respetuosa. \n\nLos talleres abordaron temas como la comunicación asertiva, la resolución pacífica de conflictos y la identificación de señales de acoso. Además, se compartieron recursos para buscar ayuda en caso de necesitar apoyo adicional. \n\nEl colegio reafirma su compromiso con la creación de espacios libres de violencia, donde todos puedan desarrollarse en un entorno seguro y positivo.",
         "ruta_imagen": "./assets/img/noticias/noticia9.jpeg",
+        "imagenes": [
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_1.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_2.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_3.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_4.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_5.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_6.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_7.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_8.jpeg",
+            "./assets/img/noticias/sensibilizacion_y_prevencion2024_9.jpeg"
+        ],
         "fecha_publicacion": "2024-11-04"
     },
     {
@@ -76,7 +87,18 @@
         "titulo": "Primera comunión CCM celebrando el sacramento de la Eucaristía",
         "anio": 2024,
         "descripcion": "Los estudiantes celebraron su Primera Comunión en una emotiva ceremonia acompañada de sus familias y seres queridos. La jornada comenzó con una misa solemne, donde los niños recibieron el sacramento de la Eucaristía por primera vez, marcando un momento importante en su vida espiritual. \n\nLa comunidad escolar se unió para organizar este evento, decorando el espacio y preparando actividades que reflejaran la importancia de la ocasión. Los estudiantes también participaron en semanas previas de catequesis, fortaleciendo su comprensión de los valores y enseñanzas cristianas. \n\nEl colegio agradece a las familias y a todos quienes hicieron posible esta ceremonia, destacando la relevancia de cultivar una vida espiritual activa desde temprana edad.",
-        "ruta_imagen": "./assets/img/noticias/noticia10.jpg",
+        "ruta_imagen": "./assets/img/noticias/primera_comunion2024_1.jpg",
+        "imagenes": [
+            "./assets/img/noticias/primera_comunion2024_1.jpg",
+            "./assets/img/noticias/primera_comunion2024_2.jpg",
+            "./assets/img/noticias/primera_comunion2024_3.jpg",
+            "./assets/img/noticias/primera_comunion2024_4.jpg",
+            "./assets/img/noticias/primera_comunion2024_5.jpg",
+            "./assets/img/noticias/primera_comunion2024_6.jpg",
+            "./assets/img/noticias/primera_comunion2024_7.jpg",
+            "./assets/img/noticias/primera_comunion2024_8.jpg",
+            "./assets/img/noticias/primera_comunion2024_9.jpg"
+        ],
         "fecha_publicacion": "2024-11-09"
     },
     {
@@ -86,5 +108,38 @@
         "descripcion": "El colegio organizó su Feria Científica Anual, en la que los estudiantes presentaron proyectos innovadores y creativos. El evento contó con la participación de diferentes niveles educativos, quienes exhibieron experimentos y soluciones tecnológicas a problemas actuales. \n\nEntre los proyectos destacados se incluyeron un sistema de reciclaje automatizado, un prototipo de energía renovable casera y una investigación sobre el impacto del cambio climático en la región. La feria fue un espacio para que los estudiantes demostraran sus habilidades científicas y trabajaran en equipo. \n\nEl colegio agradece a los profesores y familias que apoyaron esta iniciativa, promoviendo el amor por las ciencias y el aprendizaje práctico.",
         "ruta_imagen": "./assets/img/noticias/noticia8.jpg",
         "fecha_publicacion": "2023-11-05"
+    },
+    {
+        "id": 12,
+        "titulo": "Licenciaturas IV Medios 2024 – Despidiendo una nueva generación",
+        "anio": 2024,
+        "descripcion": "El lema “Hagamos vida la solidaridad desde nuestra identidad cordimariana”, fue el faro que durante todo este año ha guiado a estudiantes, profesores y a la comunidad, reforzando el valor de la identidad y el compromiso compartido. \n\nA través de ese proceso, CCM ha ido formando jóvenes de bien, conscientes de su sentido de pertenencia y preparados para enfrentar el futuro con valores sólidos. \n\nTodo ese camino, nos lleva hoy a celebrar el esfuerzo colectivo de todos aquellos que han sido parte de este crecimiento, desde directivos y profesores hasta familiares y amigos. \n\nEs por ello, que los días 26 y 27 de noviembre se realizaron las graduaciones de estudiantes de cuarto medio, las que contaron con la asistencia de familiares y directivos del colegio. \n\nAmbas actividades vienen a cerrar un importante ciclo escolar, el cual estuvo lleno de aprendizajes, sueños y desafíos. \n\n¡Felicidades a nuestros egresados y egresadas! Mucho éxito en su futuro y recuerdo que siempre serán parte de la Comunidad Educativa CCM.",
+        "ruta_imagen": "./assets/img/noticias/licenciatura2024_1.jpg",
+        "imagenes": [
+            "./assets/img/noticias/licenciatura2024_1.jpg",
+            "./assets/img/noticias/licenciatura2024_2.jpg",
+            "./assets/img/noticias/licenciatura2024_3.jpg",
+            "./assets/img/noticias/licenciatura2024_4.jpg",
+            "./assets/img/noticias/licenciatura2024_5.jpg",
+            "./assets/img/noticias/licenciatura2024_6.jpg",
+            "./assets/img/noticias/licenciatura2024_7.jpg",
+            "./assets/img/noticias/licenciatura2024_8.jpg",
+            "./assets/img/noticias/licenciatura2024_9.jpg"
+        ],
+        "fecha_publicacion": "2024-12-02"
+    },
+    {
+        "id": 13,
+        "titulo": "Taller de Handball – Excelente representación de nuestras alumnas",
+        "anio": 2024,
+        "descripcion": "Con gran orgullo queremos compartir con la comunidad CCM, el triunfo del equipo infantil de handball, quienes participaron en la Liga Infantil 2024 coronándose como las campeonas del certamen. \n\nLa final se disputó el sábado 24 de noviembre en el Instituto Hebreo, donde nuestras representantes demostraron su superioridad con una victoria contundente sobre el Colegio Teresiano, con un marcador de 35 a 10, resultado que no sólo las posicionó en el primer lugar, sino que también como las invictas a lo largo de todo el torneo. \n\nEste triunfo no solo refleja su talento y dedicación, sino que también el trabajo en equipo, la disciplina y la pasión por el deporte que cada una de ellas demostró desde el primer partido. \n\nReconocimiento especial también para su profesor, Iván Villanueva, cuya dirección y apoyo constante fueron claves para que este equipo alcanzara la cima. \n\nCon esta victoria, las jugadoras no solo se llevan el título de campeonas, sino también el reconocimiento de su esfuerzo y el ejemplo que han dado a todos los que las han apoyado. \n\n¡Felicidades a nuestras campeonas y a su gran entrenador, por este merecido logro!",
+        "ruta_imagen": "./assets/img/noticias/handball2024_1.jpeg",
+        "imagenes": [
+            "./assets/img/noticias/handball2024_1.jpeg",
+            "./assets/img/noticias/handball2024_2.jpeg",
+            "./assets/img/noticias/handball2024_3.jpeg",
+            "./assets/img/noticias/handball2024_4.jpeg"
+        ],
+        "fecha_publicacion": "2024-12-01"
     }
 ]
