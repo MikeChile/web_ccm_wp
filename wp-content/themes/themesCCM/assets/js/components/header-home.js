@@ -1,45 +1,75 @@
 // header.js
 
-async function loadPages() {
+async function loadData() {
     try {
-        const response = await fetch(`${miTema.rutaInicial}/datos/pages.json`); // Cambia la ruta
-        const pages = await response.json();
-        return pages;
+        const responsePages = await fetch(`${miTema.rutaInicial}/datos/pages.json`);
+        const pages = await responsePages.json();
+
+        const responseNoticias = await fetch(`${miTema.rutaInicial}/datos/noticias.json`);
+        const noticias = await responseNoticias.json();
+
+        const responseTalleres = await fetch(`${miTema.rutaInicial}/datos/talleres.json`);
+        const talleres = await responseTalleres.json();
+
+        return { pages, noticias, talleres };
     } catch (error) {
-        console.error('Error al cargar las páginas:', error);
-        return [];
+        console.error('Error al cargar los datos:', error);
+        return { pages: [], noticias: [], talleres: [] };
     }
 }
 
-function setupSearch(pages) {
+function setupSearch(data) {
     const searchIcon = document.getElementById('search-icon');
     const searchInput = document.getElementById('search-input');
     const resultsContainer = document.getElementById('search-results');
 
     searchIcon.addEventListener('click', function (event) {
-        event.preventDefault(); // Evitar el comportamiento por defecto del enlace
-        searchInput.classList.toggle('d-none'); // Mostrar/ocultar el input de búsqueda
-        searchInput.focus(); // Enfocar el input
-        resultsContainer.classList.add('d-none'); // Ocultar resultados al abrir el input
+        event.preventDefault();
+        searchInput.classList.toggle('d-none');
+        searchInput.focus();
+        resultsContainer.classList.add('d-none');
     });
 
     searchInput.addEventListener('input', function () {
         const query = searchInput.value.toLowerCase();
-        const filteredPages = pages.filter(page => page.title.toLowerCase().includes(query));
+        const filteredResults = [];
 
-        resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
-        if (filteredPages.length > 0) {
+        // Buscar en páginas
+        data.pages.forEach(page => {
+            if (page.title.toLowerCase().includes(query)) {
+                filteredResults.push({ title: page.title, url: page.url, type: 'página' });
+            }
+        });
+
+        // Buscar en noticias
+        data.noticias.forEach(noticia => {
+            if (noticia.titulo.toLowerCase().includes(query)) {
+                filteredResults.push({ title: noticia.titulo, url: `noticia/?id=${noticia.id}`, type: 'noticia' });
+
+            }
+        });
+
+        // Buscar en talleres
+        data.talleres.forEach(taller => {
+            if (taller.nombre.toLowerCase().includes(query)) {
+                filteredResults.push({ title: taller.nombre, url: `taller/?id=${taller.ID}`, type: 'taller' });
+
+            }
+        });
+
+        resultsContainer.innerHTML = '';
+        if (filteredResults.length > 0) {
             resultsContainer.classList.remove('d-none');
-            filteredPages.forEach(page => {
+            filteredResults.forEach(result => {
                 const resultItem = document.createElement('div');
-                resultItem.innerHTML = `<a href="${page.url}">${page.title}</a>`; // Cambia la ruta
+                resultItem.innerHTML = `<a href="${result.url}">${result.title} (${result.type})</a>`;
                 resultItem.addEventListener('click', () => {
-                    window.location.href = page.url; // Redirigir al hacer clic en un resultado
+                    window.location.href = result.url;
                 });
                 resultsContainer.appendChild(resultItem);
             });
         } else {
-            resultsContainer.classList.add('d-none'); // Ocultar si no hay resultados
+            resultsContainer.classList.add('d-none');
         }
     });
 }
@@ -188,8 +218,9 @@ async function loadHeader() {
     document.getElementById('header-component').innerHTML = headerHTML;
 
     // Cargar las páginas y configurar la búsqueda
-    const pages = await loadPages();
-    setupSearch(pages);
+    // Cargar las páginas y configurar la búsqueda
+    const data = await loadData();
+    setupSearch(data);
 
     document.getElementById('sendEmail').addEventListener('click', function () {
         const nombre = document.getElementById('nombre').value;
