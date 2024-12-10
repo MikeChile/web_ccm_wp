@@ -4,6 +4,13 @@ function mi_tema_scripts()
     // Estilos principales
     wp_enqueue_style('estilos', get_stylesheet_uri());
 
+    // Swipper para noticias de la pagina de inicio
+    function agregar_swiper_js()
+    {
+        wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js', array(), '1.0', true);
+    }
+    add_action('wp_enqueue_scripts', 'agregar_swiper_js');
+
     // Script para el header
     wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/components/header-home.js', array('jquery'), null, true);
     wp_localize_script('header-js', 'miTema', array(
@@ -28,7 +35,7 @@ function mi_tema_scripts()
     }
 
     if (
-        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'calendario-de-actividades', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
+        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'tutoriales-lirmi', 'uniformes', 'calendario-de-actividades', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
     ) {
         wp_enqueue_style('estilo-infraestructura', get_template_directory_uri() . '/assets/css/infraestructura.css');
     }

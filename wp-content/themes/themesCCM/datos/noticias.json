@@ -141,5 +141,20 @@
             "./assets/img/noticias/handball2024_4.jpeg"
         ],
         "fecha_publicacion": "2024-12-01"
+    },
+    {
+        "id": 14,
+        "titulo": "Confirmaciones 2024 – Fortaleciendo la fe en Cristo",
+        "anio": 2024,
+        "descripcion": "Una profunda y emotiva Eucaristía se realizó el 30 de noviembre, cuando 12 alumnos y un adulto de la comunidad CCM recibieron el sacramento de la Confirmación.\n\nLa celebración tuvo lugar en la Parroquia San Antonio María Claret y fue presidida por el Padre Jonathan Muñoz, Vicario de la Esperanza Joven.\n\nEn la ocasión, se destacó la importancia de recibir este sacramento, el cual fortalece el vínculo con la Iglesia y permite unirse firmemente a Cristo, participando de  su misión y dando testimonio de su fe.\n\nEl proceso de preparación tuvo una duración de un año, periodo en que los confirmados estuvieron acompañados por animadores que los guiaron en los encuentros de cada viernes. \n\nAgradecemos a todos los que hicieron posible esta significativa celebración y felicitamos a los confirmados por este importante paso en su vida espiritual.",
+        "ruta_imagen": "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_4.jpg",
+        "imagenes": [
+            "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_1.jpg",
+            "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_2.jpg",
+            "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_3.jpg",
+            "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_4.jpg",
+            "./assets/img/noticias/2024/confirmaciones_2024/confirmaciones_5.jpg"
+        ],
+        "fecha_publicacion": "2024-12-05"
     }
 ]

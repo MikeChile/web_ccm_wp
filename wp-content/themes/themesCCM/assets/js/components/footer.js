@@ -53,12 +53,12 @@ function loadFooter() {
                             </div>
                             <ul>
                                 <li><a href="${miTemaFooter.rutaInicial}/lista-de-utiles/">Lista de Útiles Escolares</a></li>
-                                <!--<li><a href="#">Uniformes Escolares</a></li>-->
+                                <li><a href="${miTemaFooter.rutaInicial}/uniformes/">Uniformes Escolares</a></li>
                                 <!--<li><a href="#">Transporte Escolar</a></li>-->
                                 <!--<li><a href="#">Trabaja con Nosotros</a></li>-->
                                 <li><a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Noviembre_2024.pdf">Menu Casino del mes</a></li>
                                 <!--<li><a href="#">Protocolos Covid 19</a></li>-->
-                                <!--<li><a href="#">Tutoriales Lirmi</a></li>-->
+                                <li><a href="${miTemaFooter.rutaInicial}/tutoriales-lirmi/">Tutoriales Lirmi</a></li>
                                 <!--<li><a href="#">Boletin de Noticias</a></li>-->
                                 <!--<li><a href="#">Procedimientos de emergencia</a></li>-->
                                 <!--<li><a href="#">Calendario Actividades Anuales</a></li>-->

@@ -22,6 +22,9 @@
     <!-- Estilo Principal -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
     <!-- Titulo -->
     <title><?php wp_title(); ?></title>
 

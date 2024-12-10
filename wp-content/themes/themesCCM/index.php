@@ -46,50 +46,106 @@
         <h4>Colegio Corazón de María</h4>
         <h2>Noticias CCM</h2>
 
-        <div class="slider-container">
-            <div class="slider">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <!-- Aquí se cargarán las noticias -->
+                </div>
 
             </div>
+
+            <div class="swiper-pagination"></div>
         </div>
-
-        <script>
-            async function cargarNoticiasRecientes() {
-                try {
-                    const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
-                    const noticias = await respuesta.json();
-
-                    // Ordenar las noticias por fecha (descendente)
-                    const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
-
-                    // Tomar las 5 noticias más recientes
-                    const noticiasRecientes = noticiasOrdenadas.slice(0, 7);
-
-                    const slider = document.querySelector('.slider');
-
-                    // Crear las noticias para el slider
-                    noticiasRecientes.forEach(noticia => {
-                        const divNoticia = document.createElement('div');
-                        divNoticia.className = 'noticia';
-
-                        divNoticia.innerHTML = `
-                        <a href="<?php echo get_template_directory_uri(); ?>/noticia/?id=${noticia.id}" class="text-decoration-none text-dark">
-                            <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
-                                alt="${noticia.titulo}" class="img-noticia">
-                            <div class="titulo-noticia">${noticia.titulo}</div>
-                        </a>
-                        `;
-
-                        slider.appendChild(divNoticia);
-                    });
-                } catch (error) {
-                    console.error("Error al cargar las noticias recientes:", error);
-                }
-            }
-
-            // Llamar a la función al cargar la página
-            document.addEventListener('DOMContentLoaded', cargarNoticiasRecientes);
-        </script>
     </section>
+    <script>
+        // Cargar noticias
+        async function cargarNoticiasRecientes() {
+            try {
+                const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/noticias.json');
+                const noticias = await respuesta.json();
+
+                // Ordenar las noticias por fecha (descendente)
+                const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.fecha_publicacion) - new Date(a.fecha_publicacion));
+
+                // Tomar las 7 noticias más recientes
+                const noticiasRecientes = noticiasOrdenadas.slice(0, 7);
+
+                const swiperWrapper = document.querySelector('.swiper-wrapper');
+                var swiperContainer = document.querySelector('.slide-content');
+                var swiper;
+
+                // Crear las noticias para el slider
+                noticiasRecientes.forEach(noticia => {
+                    const divNoticia = document.createElement('div');
+                    divNoticia.className = 'card swiper-slide';
+
+                    const descripcionCorta = noticia.descripcion.substring(0, 100) + '...';
+
+                    divNoticia.innerHTML = `
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/${noticia.ruta_imagen}" 
+                                    alt="${noticia.titulo}" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">${noticia.titulo}</h2>
+                            <p class="description">${descripcionCorta}</p>
+                            <button class="button">Ver más</button>
+                        </div>
+                    `;
+
+                    swiperWrapper.appendChild(divNoticia);
+                });
+
+                // Inicializar Swiper después de agregar todos los elementos del slider
+                setTimeout(() => {
+                    if (swiperContainer) {
+                        var swiper = new Swiper(swiperContainer, {
+                            slidesPerView: 5,
+                            spaceBetween: 25,
+                            loop: true,
+                            centerSlide: true,
+                            fade: true,
+                            grabCursor: true,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                                dynamicBullets: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                            autoplay: {
+                                delay: 100,
+                                reverseDirection: true,
+                            },
+                            speed: 3500,
+                            breakpoints: {
+                                0: {
+                                    slidesPerView: 1,
+                                },
+                                520: {
+                                    slidesPerView: 2,
+                                },
+                                950: {
+                                    slidesPerView: 3,
+                                },
+                            },
+                        });
+                    } else {
+                        console.error("No se encontró el contenedor de Swiper");
+                    }
+                }, 100);
+            } catch (error) {
+                console.error("Error al cargar las noticias recientes:", error);
+            }
+        }
+
+        // Llamar a la función al cargar la página
+        document.addEventListener('DOMContentLoaded', cargarNoticiasRecientes);
+    </script>
 
     <!--Noticias movil-->
     <div class="d-sm-none">
@@ -180,7 +236,6 @@
         // Llamar a la función al cargar la página
         document.addEventListener('DOMContentLoaded', cargarComunicadoActual);
     </script>
-
 
     <!-- SECCIÓN DE MAS CONTENIDOS POR PESTAÑAS -->
     <section id="links">
@@ -741,4 +796,6 @@
     </section>
 
 </div>
+<!-- Swiper JS -->
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 <?php get_footer(); ?>
