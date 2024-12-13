@@ -35,7 +35,7 @@ function mi_tema_scripts()
     }
 
     if (
-        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'tutoriales-lirmi', 'uniformes', 'calendario-de-actividades', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
+        is_page(array('infraestructura', 'academicos', 'noticias', 'institucionales', 'informativos', 'procedimientos-de-emergencia-y-o-evacuacion', 'transporte-escolar', 'trabaja-con-nosotros', 'tutoriales-lirmi', 'uniformes', 'calendario-de-actividades', 'lecturas-complementarias', 'organizacion', 'colegio', 'comunicados', 'historia', 'mision-vision-valores', 'misioneras-del-corazon-de-maria', 'lista-de-utiles'))
     ) {
         wp_enqueue_style('estilo-infraestructura', get_template_directory_uri() . '/assets/css/infraestructura.css');
     }

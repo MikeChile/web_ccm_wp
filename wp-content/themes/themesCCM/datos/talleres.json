@@ -476,11 +476,12 @@
         "ID": 44,
         "nombre": "Experiencias pedagógicas",
         "cursos_seleccionados": "I° medio a IV° medio",
-        "descripcion": "Taller destinado a fomentar el aprendizaje práctico a través de proyectos pedagógicos innovadores.",
+        "descripcion": "<hr><h2>Estimados Padres y Apoderados:</h2> <p>Junto con saludar, nos dirigimos a ustedes para informar que a partir de marzo de 2025 nuestro colegio implementará un Taller de Experiencias Pedagógicas y Extracurriculares para las familias que tienen estudiantes en Pre Kínder y Kínder, 1° y 2° básicos.</p>.",
         "portada": "talleres/Portada_experiencias_pedagogicas.png",
         "imagenes_del_taller": [
-            "taller.webp",
-            "taller.webp"
+            "talleres/experiencias_pedagogicas/experiencia_pedagogica_1.png",
+            "talleres/experiencias_pedagogicas/experiencia_pedagogica_2.png",
+            "talleres/experiencias_pedagogicas/experiencia_pedagogica_3.png"
         ]
     }
 ]

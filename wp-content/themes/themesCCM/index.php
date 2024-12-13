@@ -789,8 +789,11 @@
                     alt="Protegete-de-las-altas-temperaturas-y-la-radiacion-solar" class="img-mas-info">
             </div>
             <div class="col-12 col-md-4 mb-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/trabaja-con-nosotros-768x768.png" alt="trabaja-con-nosotros"
-                    class="img-mas-info">
+                <a href="<?php echo get_template_directory_uri(); ?>/trabaja-con-nosotros/" rel="noopener noreferrer">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/trabaja-con-nosotros-768x768.png" alt="trabaja-con-nosotros"
+                        class="img-mas-info">
+                </a>
+
             </div>
         </div>
     </section>

@@ -6,6 +6,8 @@ get_header(); ?>
 
 <!-- HEADER -->
 <div id="header-component"></div>
+<link href="<?php echo get_template_directory_uri(); ?>/assets/lightbox/dist/css/lightbox.css" rel="stylesheet">
+<script src="<?php echo get_template_directory_uri(); ?>/assets/lightbox/dist/js/lightbox.js"></script>
 
 <!-- CONTENIDO PRINCIPAL-->
 <div class="container mt-4">
@@ -35,11 +37,22 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 <script>
+    // Función para obtener el parámetro "id" de la URL
+    function obtenerIdTaller() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('id');
+    }
+
     async function cargarTaller() {
+
+        const id = obtenerIdTaller();
+
+        if (!id) {
+            document.getElementById('taller-detalle').innerHTML = "<p>No se encontró la noticia solicitada.</p>";
+            return;
+        }
+
         try {
-            // Obtener el ID del taller de la URL
-            const params = new URLSearchParams(window.location.search);
-            const id = params.get('id');
 
             // Cargar el archivo JSON
             const respuesta = await fetch('<?php echo get_template_directory_uri(); ?>/datos/talleres.json');
@@ -56,6 +69,7 @@ get_header(); ?>
                 return;
             }
 
+
             // Construir el contenido del taller
             const contenedor = document.getElementById('taller-detalle');
             contenedor.innerHTML = `
@@ -68,8 +82,9 @@ get_header(); ?>
                 <div class="row">
                     ${taller.imagenes_del_taller.map(imagen => `
                         <div class="col-md-4 col-sm-6 mb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/${imagen}" 
-                                 alt="${taller.nombre}" class="img-fluid rounded">
+                            <a href="<?php echo get_template_directory_uri(); ?>/assets/img/${imagen}" data-lightbox="galeria" data-title="${taller.nombre}">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/${imagen}" alt="${taller.nombre}" class="img-fluid rounded">
+                            </a>
                         </div>
                     `).join('')}
                 </div>
