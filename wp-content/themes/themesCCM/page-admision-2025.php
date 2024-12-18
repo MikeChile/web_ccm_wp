@@ -102,7 +102,7 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>Pre Kínder</td>
-                        <td>26</td>
+                        <td>12</td>
 
                     </tr>
                     <tr>
@@ -153,12 +153,12 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>3° Básico</td>
-                        <td>1</td>
+                        <td>0</td>
 
                     </tr>
                     <tr>
                         <td>4° Básico</td>
-                        <td>3</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>5° Básico</td>
@@ -166,11 +166,11 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>6° Básico</td>
-                        <td>8</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>7° Básico</td>
-                        <td>2</td>
+                        <td>0</td>
                     </tr>
                     <tr>
                         <td>8° Básico</td>
@@ -194,12 +194,12 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>2° Medio</td>
-                        <td>2</td>
+                        <td>0</td>
 
                     </tr>
                     <tr>
                         <td>3° Medio</td>
-                        <td>6</td>
+                        <td>5</td>
 
                     </tr>
                     <tr>
