@@ -85,7 +85,7 @@ get_header(); ?>
         </div>
         <div class="col-12">
             <h3 class="mt-4">2. VACANTES QUE SE OFRECEN PARA EL AÑO 2025:</h3>
-            <p>NÚMERO DE VACANTES DISPONIBLES (al 26 de Agosto de 2024)</p>
+            <p>NÚMERO DE VACANTES DISPONIBLES (al 14 de Enero de 2025)</p>
         </div>
         <div class="col-12 col-md-4">
             <table class="table">
@@ -97,18 +97,18 @@ get_header(); ?>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Medio Mayor</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
                         <td>Pre Kínder</td>
-                        <td>12</td>
+                        <td>13</td>
 
                     </tr>
                     <tr>
                         <td>Kínder</td>
                         <td>0</td>
 
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr>
                         <td>--</td>
@@ -144,7 +144,7 @@ get_header(); ?>
                 <tbody>
                     <tr>
                         <td>1° Básico</td>
-                        <td>0</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td>2° Básico</td>
@@ -166,11 +166,11 @@ get_header(); ?>
                     </tr>
                     <tr>
                         <td>6° Básico</td>
-                        <td>4</td>
+                        <td>9</td>
                     </tr>
                     <tr>
                         <td>7° Básico</td>
-                        <td>0</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>8° Básico</td>
@@ -203,8 +203,8 @@ get_header(); ?>
 
                     </tr>
                     <tr>
-                        <td>4° Medio</td>
-                        <td>0</td>
+                        <td>--</td>
+                        <td>--</td>
                     </tr>
                     <tr>
                         <td>--</td>

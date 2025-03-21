@@ -1101,3 +1101,12 @@ button.contact_form_submit {
     display: none;
   }
 }
+
+.cajaAbout {
+  width: 100%;
+}
+.img-about {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}

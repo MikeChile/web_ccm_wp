@@ -21,23 +21,34 @@
     <!-- INFORMACIÓN IMPORTANTE-->
     <section id="about" class="my-4">
         <h4>Colegio Corazón de María</h4>
-        <h3>Admisión 2025</h3>
-        <h5>Tercer Proceso de Postulación Prekinder a 2do Básico</h5>
-        <ul class="mb-4">
-            <li><b>Postulación Online:</b> Hasta el 20 de diciembre de 2024</li>
-            <li><b>Publicación seleccionados para matricula y/o lista de espera: </b> 23 de diciembre de 2024</li>
-            <li><b>Matricula:</b> 7 de enero de 2025</li>
-        </ul>
-
-        <h5>Tercer Proceso de Postulación</h5>
-        <ul class="mb-4">
-            <li><b>Postulación Online:</b> Hasta el 20 de diciembre de 2024</li>
-            <li><b>Examenes de admisión:</b> 17 de diciembre a las 8:15 hrs. (duración 2 hrs. aprox.)</li>
-            <li><b>Publicación seleccionados para matricula y/o lista de espera: </b> 23 de diciembre de 2024</li>
-            <li><b>Matricula:</b> 7 de enero de 2025</li>
-        </ul>
-
-        <a href="<?php echo get_template_directory_uri(); ?>/admision-2025/"><button class="btn btn-danger">ADMISIÓN 2025</button></a>
+        <div class="row">
+            <div class="col-6">
+                <div class="cajaAbout">
+                    <a href="http://localhost/web_ccm_wordpress/lista-de-utiles/">
+                        <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/1-768x192.png" alt="imagen 1" class="img-about">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="cajaAbout">
+                    <a href="http://localhost/web_ccm_wordpress/admision-2025/">
+                        <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/Boton-Home-768x192.png" alt="imagen 1" class="img-about">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="cajaAbout">
+                    <a href="https://www.colegiocorazondemaria.cl/new/circulares-informativas/">
+                        <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/6.png" alt="imagen 1" class="img-about">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="cajaAbout">
+                    <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/Lema2025-4.png" alt="imagen 1" class="img-about">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- SECCIÓN NOTICIAS -->
@@ -613,7 +624,7 @@
                                 <!-- Contenido académico -->
                                 <ul>
                                     <li><a href="https://www.colegiocorazondemaria.cl/new/docs/reglamento_de_evaluacion_2023.pdf"
-                                            target="_blank"></a> REGLAMENTO DE EVALUACIÓN, CALIFICACIÓN Y PROMOCIÓN
+                                            target="_blank"></a> Reglamento de evaluación, calificación Y promoción
                                         (formato .pdf)</li>
                                 </ul>
                             </div>
@@ -632,12 +643,11 @@
                                 <!-- Contenido institucional -->
                                 <ul>
                                     <li><a href="https://www.colegiocorazondemaria.cl/new/docs/pei.pdf"
-                                            target="_blank">PROYECTO EDUCATIVO INSTITUCIONAL (P.E.I.)</a></li>
+                                            target="_blank">Proyecto educativo institucional (P.E.I.)</a></li>
                                     <li><a href="https://www.colegiocorazondemaria.cl/new/reglamento-interno-escolar/"
-                                            target="_blank">REGLAMENTO INTERNO ESCOLAR (R.I.E.) y PROTOCOLOS DE
-                                            ACCIÓN</a></li>
+                                            target="_blank">Reglamento interno educacional (R.I.E.) y protocolos de acción</a></li>
                                     <li><a href="https://www.colegiocorazondemaria.cl/new/docs/pise_ccm2018.pdf"
-                                            target="_blank">PLAN INTEGRAL DE SEGURIDAD ESCOLAR</a></li>
+                                            target="_blank">Plan integral de seguridad escolar</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -775,7 +785,7 @@
                         <div class="caja-info">
                             <i class='bx bx-food-menu'></i>
                             <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Diciembre_2024.pdf">Menú casino mes de
-                                Diciembre</a>
+                                Abril</a>
                         </div>
                     </div>
                     <!--<div class="col-12 mb-2">
