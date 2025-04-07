@@ -36,8 +36,7 @@ get_header(); ?>
 
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="mt-4">ADMISIÓN AÑO ACADÉMICO 2025</h2>
-            <h3 class="mt-4">PROCESO DE POSTULACIÓN ONLINE</h3>
+            <h3 class="mt-4">Proceso de postulación online</h3>
         </div>
         <div class="col-12">
             <p><b> Colegio Corazón de María</b> inicia las postulaciones para el <b>Año Escolar 2025</b> a través de

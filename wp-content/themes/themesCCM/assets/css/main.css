@@ -1110,3 +1110,29 @@ button.contact_form_submit {
   height: 150px;
   margin-bottom: 10px;
 }
+
+#cajaabout .col-md-6 {
+  flex: 0 0 50%; /* Ocupa el 50% del ancho del contenedor */
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+#cajaAbout .col-12 {
+  flex: 0 0 100%; /* Ocupa el 100% del ancho del contenedor */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#cajaabout .col-md-6 {
+  flex: 0 0 100%; /* En pantallas pequeñas, ocupa el 100% */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Para pantallas medianas en adelante (>=768px) */
+@media (min-width: 768px) {
+  #cajaabout .col-md-6 {
+    flex: 0 0 50%; /* Ocupa el 50% del ancho */
+    max-width: 50%;
+  }
+}

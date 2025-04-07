@@ -68,7 +68,7 @@ get_header(); ?>
                 <div class="card-body d-flex flex-column" style="width: 70%;">
                     <h3 class="card-title">${taller.nombre}</h3>
                     <p class="card-text">${taller.descripcion}</p>
-                    <a href="<?php echo get_template_directory_uri(); ?>/taller/?id=${taller.ID}" class="btn btn-primary">Ver detalles</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/taller/?id=${taller.ID}" class="btn btn-taller">Ver detalles</a>
                 </div>
             `;
 

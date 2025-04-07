@@ -64,3 +64,8 @@ body {
   color: var(--texto-principal);
   font-family: "Imperial";
 }
+
+.btn-taller {
+  background-color: var(--color-primario);
+  color: white;
+}

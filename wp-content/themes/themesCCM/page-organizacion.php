@@ -37,12 +37,12 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="row mb-4">
-        <div class="col-12 col-md-4">
+    <div class="row mb-4 content-section">
+        <div class="col-12 col-md-4 image-wrapper" id="imageContainer">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2022/09/foto2.jpg"
-                alt="Organización" class="img-fluid">
+                alt="Organización" class="img-fluid" id="organizationImage">
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 text-wrapper" id="textContainer">
             <p>El Colegio Corazón de María se fundamenta en la línea educativa y formativa del Padre Joaquín
                 Masmitjá, para quien catequesis y educación permiten integrar fe y cultura. Son tópicos de su vida y
                 legado el educar, formar y evangelizar.</p>
@@ -57,7 +57,90 @@ get_header(); ?>
                 cristiana con profundo amor a María y Jesús, propiciando el desarrollo de un ambiente favorable para
                 el aprendizaje.</p>
         </div>
-        <div class="col-12 col-md-8">
+    </div>
+
+    <style>
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-wrapper,
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-wrapper {
+            align-items: center;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .text-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 767px) {
+            .content-section {
+                flex-direction: column;
+            }
+
+            .image-wrapper,
+            .text-wrapper {
+                width: 100%;
+            }
+        }
+
+
+        .content-section-2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            /* Asegura que la imagen y el texto tengan la misma altura */
+        }
+
+        .image-wrapper-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #organizationImage2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-height: 300px;
+            /* Mantiene proporciones sin distorsionar */
+        }
+
+        .text-wrapper-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 767px) {
+            .content-section-2 {
+                flex-direction: column;
+            }
+
+            .image-wrapper-2,
+            .text-wrapper-2 {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <div class="row mb-4 content-section-2">
+        <div class="col-12 col-md-8 text-wrapper-2" id="textContainer2">
             <p>Como Colegio Católico la acción Pastoral forma parte central del Proyecto Educativo, la que se
                 refiere a las experiencias de anuncio, celebración de la fe, vida comunitaria y servicio. Esto
                 constituye la misión específica del Colegio Corazón de María que es facilitar y promover el
@@ -72,11 +155,12 @@ get_header(); ?>
                 hijos/as o pupilos/as, el apoyo en el crecimiento en la fe, a través de la participación en
                 celebraciones, reuniones, entrevistas, instancias formativas y experiencias pastorales.</p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 image-wrapper-2" id="imageContainer2">
             <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2022/09/foto3.jpg"
-                alt="Organización" class="img-fluid">
+                alt="Organización" class="img-fluid" id="organizationImage2">
         </div>
     </div>
+
 </div>
 
 <!-- FOOTER -->

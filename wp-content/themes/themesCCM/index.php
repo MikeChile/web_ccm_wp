@@ -21,29 +21,29 @@
     <!-- INFORMACIÓN IMPORTANTE-->
     <section id="about" class="my-4">
         <h4>Colegio Corazón de María</h4>
-        <div class="row">
-            <div class="col-6">
+        <div class="row" id="cajaabout">
+            <div class="col-12 col-md-6">
                 <div class="cajaAbout">
                     <a href="http://localhost/web_ccm_wordpress/lista-de-utiles/">
                         <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/1-768x192.png" alt="imagen 1" class="img-about">
                     </a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="cajaAbout">
                     <a href="http://localhost/web_ccm_wordpress/admision-2025/">
                         <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/Boton-Home-768x192.png" alt="imagen 1" class="img-about">
                     </a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="cajaAbout">
                     <a href="https://www.colegiocorazondemaria.cl/new/circulares-informativas/">
                         <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/6.png" alt="imagen 1" class="img-about">
                     </a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="cajaAbout">
                     <img src="https://www.colegiocorazondemaria.cl/new/wp-content/uploads/2025/03/Lema2025-4.png" alt="imagen 1" class="img-about">
                 </div>
@@ -207,7 +207,7 @@
         document.addEventListener('DOMContentLoaded', cargarNoticiasMovil);
     </script>
 
-    <a href="<?php echo get_template_directory_uri(); ?>/noticias/"><button class="btn btn-danger mt-4">VER NOTICIAS</button></a>
+    <a href="<?php echo get_template_directory_uri(); ?>/noticias/"><button class="btn btn-danger mt-4">Ver Noticias</button></a>
 
     <!-- SECCIÓN COMUNICADOS -->
     <section id="comunicado" class="mt-4 mb-5">
@@ -217,7 +217,7 @@
             Cargando el comunicado más reciente...
         </p>
         <a href="<?php echo get_template_directory_uri(); ?>/comunicados/">
-            <button class="btn btn-danger mt-4">VER COMUNICADOS</button>
+            <button class="btn btn-danger mt-4">Ver Comunicados</button>
         </a>
     </section>
 
@@ -615,11 +615,11 @@
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Académicos
+                                <i class='bx bx-universal-access' style="font-size: 30px;"></i> Académicos
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample" style="padding-left: 50px;">
                             <div class="accordion-body">
                                 <!-- Contenido académico -->
                                 <ul>
@@ -634,11 +634,11 @@
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Institucionales
+                                <i class='bx bxs-institution' style="font-size: 30px;"></i> Institucionales
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample" style="padding-left: 50px;">
                             <div class="accordion-body">
                                 <!-- Contenido institucional -->
                                 <ul>
@@ -656,11 +656,11 @@
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Lista de útiles
+                                <i class='bx bx-list-plus' style="font-size: 30px;"></i> Lista de útiles
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample" style="padding-left: 50px;">
                             <div class="accordion-body">
                                 <!-- Contenido de lista de útiles -->
                                 <ul>
@@ -720,11 +720,11 @@
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Lecturas complementarias
+                                <i class='bx bxs-book-reader' style="font-size: 30px;"></i> Lecturas Complementarias
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample" style="padding-left: 50px;">
                             <div class="accordion-body">
                                 <!-- Contenido de lecturas complementarias -->
                                 <ul>
@@ -784,7 +784,7 @@
                     <div class="col-12 mb-2">
                         <div class="caja-info">
                             <i class='bx bx-food-menu'></i>
-                            <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Diciembre_2024.pdf">Menú casino mes de
+                            <a href="https://colegiocorazondemaria.cl/new/docs/menu_casino_ccm_Diciembre_2024.pdf">Menú Casino Mes de
                                 Abril</a>
                         </div>
                     </div>
